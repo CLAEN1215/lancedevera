@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script>
+    (function() {
+      try {
+        var now = new Date();
+        var utc8Hour = (now.getUTCHours() + 8) % 24;
+        var isPM = (utc8Hour >= 12);
+        if (isPM) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch(e) {}
+    })();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Lance De Vera | BSIT Network &amp; Security</title>
+  <meta name="description" content="Portfolio of production web applications, network defense systems, cloud security tools, and automation engines by Lance De Vera.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 transition-colors duration-300">
+  <div class="page-shell min-h-screen flex flex-col justify-between">
+    <div class="relative z-10 flex flex-col h-full">
+      <!-- Header -->
+      <header id="header" class="w-full h-20 border-b border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="flex items-center justify-between h-full max-w-7xl px-6 mx-auto select-none">
+          <a href="index.html" class="group flex items-center space-x-2 text-black dark:text-white font-semibold">
+            <span class="text-xl -translate-y-0.5 text-primary">✦</span>
+            <div class="flex flex-col">
+              <span class="text-sm font-bold tracking-tight">Lance De Vera</span>
+              <span class="text-[10px] text-neutral-500 dark:text-neutral-400 font-mono">BSIT / Network &amp; Security</span>
+            </div>
+          </a>
+
+          <div id="mobileMenuBackground" onclick="closeMenu()" class="mobile-bg fixed inset-0 z-20 w-screen h-screen duration-300 ease-out bg-white/90 dark:bg-neutral-950/90 hidden"></div>
+          
+          <nav class="relative z-30 flex items-center gap-6 text-sm text-neutral-600 dark:text-neutral-400 font-medium">
+            <a href="index.html" class="hover:text-neutral-900 dark:hover:text-white transition-colors">Home</a>
+            <a href="index.html#timeline" class="hover:text-neutral-900 dark:hover:text-white transition-colors">Timeline</a>
+            <a href="projects.html" class="text-black dark:text-white font-semibold underline underline-offset-4 decoration-primary">Projects</a>
+            <a href="index.html#connect" class="hover:text-neutral-900 dark:hover:text-white transition-colors">Contact</a>
+
+            <button onclick="toggleTheme()" aria-label="Toggle theme" class="p-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors">
+              <svg class="theme-icon sun w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+              <svg class="theme-icon moon w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="site-main flex-1">
+        <section class="max-w-7xl mx-auto mt-12 mb-20 px-6">
+          <div class="max-w-3xl mb-12">
+            <span class="text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400 font-mono block mb-2">Portfolio Directory</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-neutral-900 dark:text-white">Featured Projects &amp; Implementations</h1>
+            <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+              Explore live production web applications, secure backend architectures, cloud security tools, and automation engines built by Lance De Vera.
+            </p>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- 1. Driveline -->
+            <div class="flex flex-col justify-between rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/60 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+              <div>
+                <div class="relative aspect-[16/10] overflow-hidden bg-neutral-100 dark:bg-neutral-800 border-b border-neutral-200 dark:border-neutral-800">
+                  <img src="assets/images/projects/driveline-rentals.png" alt="Driveline Daily Car Rentals" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                  <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-mono font-medium bg-neutral-950/80 text-emerald-400 border border-emerald-500/20 backdrop-blur-md">
+                    ● LIVE APP
+                  </span>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-lg font-bold text-neutral-900 dark:text-white group-hover:text-primary transition-colors flex items-center justify-between">
+                    <span>Driveline</span>
+                    <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+                  </h3>
+                  <p class="text-xs font-mono text-neutral-500 dark:text-neutral-400 mt-1 mb-3">Daily Car Rentals Booking Platform</p>
+                  <p class="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                    Interactive car rental platform featuring transparent daily rates, instant quote totals, multi-vehicle fleet catalog, date pickers, and counter pickup workflow.
+                  </p>
+                </div>
+              </div>
+              <div class="p-6 pt-0">
+                <div class="flex flex-wrap gap-1.5 mb-4">
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">React</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">Tailwind</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">Vite</span>
+                </div>
+                <a href="https://driveaway-daily-rentals.lovable.app" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2 px-4 rounded-xl bg-neutral-900 hover:bg-neutral-800 dark:bg-white dark:hover:bg-neutral-200 text-white dark:text-neutral-950 text-xs font-bold transition-colors">
+                  Launch Application ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- 2. NOIR WATCH CO. -->
+            <div class="flex flex-col justify-between rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/60 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+              <div>
+                <div class="relative aspect-[16/10] overflow-hidden bg-neutral-100 dark:bg-neutral-800 border-b border-neutral-200 dark:border-neutral-800">
+                  <img src="assets/images/projects/noir-watch.png" alt="NOIR WATCH CO." class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                  <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-mono font-medium bg-neutral-950/80 text-emerald-400 border border-emerald-500/20 backdrop-blur-md">
+                    ● LIVE APP
+                  </span>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-lg font-bold text-neutral-900 dark:text-white group-hover:text-primary transition-colors flex items-center justify-between">
+                    <span>NOIR WATCH CO.</span>
+                    <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+                  </h3>
+                  <p class="text-xs font-mono text-neutral-500 dark:text-neutral-400 mt-1 mb-3">Minimalist Analog Timepiece Boutique</p>
+                  <p class="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                    Refined analog watch boutique offering distraction-free e-commerce product exploration, curated mechanical specs, minimalist dark luxury aesthetic, and seamless acquisition inquiry workflows.
+                  </p>
+                </div>
+              </div>
+              <div class="p-6 pt-0">
+                <div class="flex flex-wrap gap-1.5 mb-4">
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">React</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">Tailwind</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">Luxury UI/UX</span>
+                </div>
+                <a href="https://noir-analog-boutique.lovable.app" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2 px-4 rounded-xl bg-neutral-900 hover:bg-neutral-800 dark:bg-white dark:hover:bg-neutral-200 text-white dark:text-neutral-950 text-xs font-bold transition-colors">
+                  Launch Application ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- 3. Auth System -->
+            <div class="flex flex-col justify-between rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/60 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+              <div>
+                <div class="relative aspect-[16/10] overflow-hidden bg-neutral-100 dark:bg-neutral-800 border-b border-neutral-200 dark:border-neutral-800">
+                  <img src="assets/images/projects/project1.jpg" alt="Auth System" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-mono font-medium bg-neutral-950/80 text-neutral-300 border border-white/10 backdrop-blur-md">
+                    #PROJ-01 // BACKEND
+                  </span>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-lg font-bold text-neutral-900 dark:text-white group-hover:text-primary transition-colors flex items-center justify-between">
+                    <span>Auth System</span>
+                    <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+                  </h3>
+                  <p class="text-xs font-mono text-neutral-500 dark:text-neutral-400 mt-1 mb-3">Backend Authentication &amp; Token Engine</p>
+                  <p class="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                    Engineered robust backend authentication framework featuring secure user registration, salted bcrypt password hashing, and JWT-driven authorization guards.
+                  </p>
+                </div>
+              </div>
+              <div class="p-6 pt-0">
+                <div class="flex flex-wrap gap-1.5 mb-4">
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">Node.js</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">MongoDB</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">JWT</span>
+                </div>
+                <a href="https://github.com/CLAEN1215/auth-system" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2 px-4 rounded-xl border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 text-xs font-bold transition-colors">
+                  GitHub Repository ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- 4. Collumbus -->
+            <div class="flex flex-col justify-between rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/60 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+              <div>
+                <div class="relative aspect-[16/10] overflow-hidden bg-neutral-100 dark:bg-neutral-800 border-b border-neutral-200 dark:border-neutral-800">
+                  <img src="assets/images/projects/columbus-live.png" alt="Collumbus Cloud Security Auditor" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                  <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-mono font-medium bg-neutral-950/80 text-emerald-400 border border-emerald-500/20 backdrop-blur-md">
+                    ● LIVE CONSOLE
+                  </span>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-lg font-bold text-neutral-900 dark:text-white group-hover:text-primary transition-colors flex items-center justify-between">
+                    <span>Collumbus</span>
+                    <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+                  </h3>
+                  <p class="text-xs font-mono text-neutral-500 dark:text-neutral-400 mt-1 mb-3">Cloud Security Auditor &amp; IAM Inspector</p>
+                  <p class="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                    Interactive cloud security auditing console powered by Streamlit and Python. Delivers automated cloud posture assessment, IAM permission enumeration, and compliance auditing.
+                  </p>
+                </div>
+              </div>
+              <div class="p-6 pt-0">
+                <div class="flex flex-wrap gap-1.5 mb-4">
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">Python</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">Streamlit</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">CloudSec</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="http://columbus-audit.duckdns.org:8501/" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2 px-2 rounded-xl bg-neutral-900 hover:bg-neutral-800 dark:bg-white dark:hover:bg-neutral-200 text-white dark:text-neutral-950 text-xs font-bold transition-colors">
+                    Console ↗
+                  </a>
+                  <a href="https://github.com/CLAEN1215/Collumbus" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2 px-2 rounded-xl border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 text-xs font-bold transition-colors">
+                    GitHub ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. 1688 Scraper Engine -->
+            <div class="flex flex-col justify-between rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/60 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+              <div>
+                <div class="relative aspect-[16/10] overflow-hidden bg-neutral-100 dark:bg-neutral-800 border-b border-neutral-200 dark:border-neutral-800">
+                  <img src="assets/images/projects/project3.png" alt="1688 Scraper Engine" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-mono font-medium bg-neutral-950/80 text-neutral-300 border border-white/10 backdrop-blur-md">
+                    #PROJ-04 // AUTOMATION
+                  </span>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-lg font-bold text-neutral-900 dark:text-white group-hover:text-primary transition-colors flex items-center justify-between">
+                    <span>1688 Scraper Engine</span>
+                    <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+                  </h3>
+                  <p class="text-xs font-mono text-neutral-500 dark:text-neutral-400 mt-1 mb-3">Headless Browser Automation Engine</p>
+                  <p class="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                    Automated dynamic DOM scraper leveraging headless Selenium WebDriver and Python to systematically extract catalog pricing and e-commerce assets.
+                  </p>
+                </div>
+              </div>
+              <div class="p-6 pt-0">
+                <div class="flex flex-wrap gap-1.5 mb-4">
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">Python</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">Selenium</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">DOM Parsing</span>
+                </div>
+                <a href="https://github.com/CLAEN1215/1688-scraper-python-selenium" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2 px-4 rounded-xl border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 text-xs font-bold transition-colors">
+                  GitHub Repository ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- 6. Secure Code Scanner -->
+            <div class="flex flex-col justify-between rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/60 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+              <div>
+                <div class="relative aspect-[16/10] overflow-hidden bg-neutral-100 dark:bg-neutral-800 border-b border-neutral-200 dark:border-neutral-800">
+                  <img src="assets/images/projects/project4.jpg" alt="Secure Code Scanner" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                  <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-mono font-medium bg-neutral-950/80 text-neutral-300 border border-white/10 backdrop-blur-md">
+                    #PROJ-02 // SEC SCAN
+                  </span>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-lg font-bold text-neutral-900 dark:text-white group-hover:text-primary transition-colors flex items-center justify-between">
+                    <span>Secure Code Scanner</span>
+                    <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+                  </h3>
+                  <p class="text-xs font-mono text-neutral-500 dark:text-neutral-400 mt-1 mb-3">Static Vulnerability Pattern Inspector</p>
+                  <p class="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                    Express-based code scanning tool accepting raw source text or uploaded file archives to identify selected insecure patterns and credential exposures.
+                  </p>
+                </div>
+              </div>
+              <div class="p-6 pt-0">
+                <div class="flex flex-wrap gap-1.5 mb-4">
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">Express</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">AST Analysis</span>
+                  <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">Security</span>
+                </div>
+                <span class="block w-full text-center py-2 px-4 rounded-xl border border-neutral-200 dark:border-neutral-800 text-neutral-400 text-xs font-mono">
+                  Internal Tooling
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="text-neutral-600 dark:text-neutral-400 bg-white border-t dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800">
+        <div class="flex flex-col items-center justify-between min-h-[60px] mx-auto px-6 max-w-7xl sm:flex-row py-4 gap-4">
+          <a href="index.html" class="flex items-center space-x-2 text-black dark:text-white font-semibold">
+            <span class="text-primary">✦</span>
+            <span>Lance De Vera</span>
+          </a>
+          <p class="text-xs text-neutral-500 dark:text-neutral-400 font-mono">
+            &copy; 2026 Lance De Vera &bull; BSIT Network &amp; Security &bull; All rights reserved.
+          </p>
+          <div class="flex items-center space-x-4 text-xs font-mono">
+            <a href="https://github.com/CLAEN1215" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">GitHub</a>
+            <a href="https://www.facebook.com/lance.de.vera.658636/" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Facebook</a>
+            <a href="index.html#connect" class="hover:text-primary transition-colors">Connect</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

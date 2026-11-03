@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script>
+    (function() {
+      try {
+        var now = new Date();
+        var utc8Hour = (now.getUTCHours() + 8) % 24;
+        var isPM = (utc8Hour >= 12);
+        if (isPM) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch(e) {}
+    })();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — Lance De Vera | BSIT Network &amp; Security</title>
+  <meta name="description" content="About Lance De Vera — BSIT Network &amp; Security specialist at PHINMA University of Pangasinan. Systems security, cloud auditing, and full-stack engineering.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 transition-colors duration-300">
+  <div class="page-shell min-h-screen flex flex-col justify-between">
+    <div class="relative z-10 flex flex-col h-full">
+      <!-- Header -->
+      <header id="header" class="w-full h-20 border-b border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="flex items-center justify-between h-full max-w-7xl px-6 mx-auto select-none">
+          <a href="index.html" class="group flex items-center space-x-2 text-black dark:text-white font-semibold">
+            <span class="text-xl -translate-y-0.5 text-primary">✦</span>
+            <div class="flex flex-col">
+              <span class="text-sm font-bold tracking-tight">Lance De Vera</span>
+              <span class="text-[10px] text-neutral-500 dark:text-neutral-400 font-mono">BSIT / Network &amp; Security</span>
+            </div>
+          </a>
+
+          <div id="mobileMenuBackground" onclick="closeMenu()" class="mobile-bg fixed inset-0 z-20 w-screen h-screen duration-300 ease-out bg-white/90 dark:bg-neutral-950/90 hidden"></div>
+          
+          <nav class="relative z-30 flex items-center gap-6 text-sm text-neutral-600 dark:text-neutral-400 font-medium">
+            <a href="index.html" class="hover:text-neutral-900 dark:hover:text-white transition-colors">Home</a>
+            <a href="index.html#timeline" class="hover:text-neutral-900 dark:hover:text-white transition-colors">Timeline</a>
+            <a href="projects.html" class="hover:text-neutral-900 dark:hover:text-white transition-colors">Projects</a>
+            <a href="about.html" class="text-black dark:text-white font-semibold underline underline-offset-4 decoration-primary">About</a>
+            <a href="index.html#connect" class="hover:text-neutral-900 dark:hover:text-white transition-colors">Contact</a>
+
+            <button onclick="toggleTheme()" aria-label="Toggle theme" class="p-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors">
+              <svg class="theme-icon sun w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+              <svg class="theme-icon moon w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="site-main flex-1">
+        <section class="max-w-4xl mx-auto mt-12 mb-20 px-6">
+          <div class="mb-10">
+            <span class="text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400 font-mono block mb-2">Architectural Profile</span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-neutral-900 dark:text-white">About Lance De Vera</h1>
+            <p class="mt-4 text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+              BSIT student specializing in Network &amp; Security at PHINMA University of Pangasinan. Combining deep foundational systems security, defensive infrastructure posture, and full-stack software development.
+            </p>
+          </div>
+
+          <div class="space-y-8 text-neutral-700 dark:text-neutral-300 leading-relaxed">
+            <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/40">
+              <h2 class="text-lg font-bold text-neutral-900 dark:text-white mb-2">Core Competencies &amp; Focus</h2>
+              <p class="text-sm">
+                Focusing on static and dynamic vulnerability analysis, IAM permission auditing, secure token-based authentication workflows, and high-efficiency headless browser scraping. Committed to verifiable institutional governance and engineering excellence.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/40">
+              <h2 class="text-lg font-bold text-neutral-900 dark:text-white mb-3">Verified Experience &amp; Engagements</h2>
+              <ul class="space-y-4 text-sm">
+                <li class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-neutral-200 dark:border-neutral-800 pb-3">
+                  <div>
+                    <span class="font-bold text-neutral-900 dark:text-white">Data Entry Specialist</span>
+                    <span class="text-neutral-500 dark:text-neutral-400 block sm:inline"> — Diebai.it</span>
+                  </div>
+                  <span class="text-xs font-mono text-neutral-500">July 2026 – Present</span>
+                </li>
+                <li class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-neutral-200 dark:border-neutral-800 pb-3">
+                  <div>
+                    <span class="font-bold text-neutral-900 dark:text-white">Product Image Generator</span>
+                    <span class="text-neutral-500 dark:text-neutral-400 block sm:inline"> — Remote Contract</span>
+                  </div>
+                  <span class="text-xs font-mono text-neutral-500">May 2026 – June 2026</span>
+                </li>
+                <li class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                  <div>
+                    <span class="font-bold text-neutral-900 dark:text-white">AI Image Generator</span>
+                    <span class="text-neutral-500 dark:text-neutral-400 block sm:inline"> — Etsy Freelance</span>
+                  </div>
+                  <span class="text-xs font-mono text-neutral-500">April 2026 – May 2026</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-4 flex flex-wrap gap-4">
+              <a href="index.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-semibold text-xs transition-colors hover:bg-neutral-800 dark:hover:bg-neutral-200">
+                Explore Full Interactive Portfolio →
+              </a>
+              <a href="mailto:dvlance112208@gmail.com" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-neutral-300 dark:border-neutral-700 font-semibold text-xs text-neutral-900 dark:text-white transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-800">
+                Get in Touch (dvlance112208@gmail.com)
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="text-neutral-600 dark:text-neutral-400 bg-white border-t dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800">
+        <div class="flex flex-col items-center justify-between min-h-[60px] mx-auto px-6 max-w-7xl sm:flex-row py-4 gap-4">
+          <a href="index.html" class="flex items-center space-x-2 text-black dark:text-white font-semibold">
+            <span class="text-primary">✦</span>
+            <span>Lance De Vera</span>
+          </a>
+          <p class="text-xs text-neutral-500 dark:text-neutral-400 font-mono">
+            &copy; 2026 Lance De Vera &bull; BSIT Network &amp; Security &bull; All rights reserved.
+          </p>
+          <div class="flex items-center space-x-4 text-xs font-mono">
+            <a href="https://github.com/CLAEN1215" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">GitHub</a>
+            <a href="https://www.facebook.com/lance.de.vera.658636/" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Facebook</a>
+            <a href="index.html#connect" class="hover:text-primary transition-colors">Connect</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

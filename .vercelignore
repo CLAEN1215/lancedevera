@@ -1,0 +1,13 @@
+# Ignore list for Vercel deployment
+scratch/
+*.bak
+*.bak*
+*.tmp
+*.txt
+extracted.html
+New folder/
+PORTFOLIO PROJECT/
+.DS_Store
+Thumbs.db
+.git
+.gitignore

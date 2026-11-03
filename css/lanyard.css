@@ -1,0 +1,416 @@
+/* ==========================================================================
+   LANYARD BADGE 3D STYLES (ZOOMED & ENHANCED RECTANGULAR STUDENT ID)
+   ========================================================================== */
+.lanyard-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 1200px;
+}
+
+/* Lanyard Control Buttons Bar */
+.lanyard-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+.badge-control-btn {
+    background: rgba(17, 17, 17, 0.85);
+    border: 1px solid #333;
+    color: #4A90D9;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.25s ease;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.badge-control-btn:hover {
+    background: #4A90D9;
+    color: #0a0a0a;
+    border-color: #4A90D9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(74, 144, 217, 0.35);
+}
+
+.badge-control-btn.active {
+    background: #4A90D9;
+    color: #0a0a0a;
+    font-weight: 600;
+}
+
+/* Lanyard Cord & Metallic Clip Assembly */
+.lanyard-cord-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.lanyard-cord {
+    width: 3px;
+    height: 160px;
+    background: linear-gradient(to bottom, #4A90D9 0%, #1a3a5c 50%, #222 100%);
+    margin: 0 auto;
+    position: relative;
+    transform-origin: top center;
+    box-shadow: 0 0 8px rgba(74, 144, 217, 0.3);
+}
+
+.lanyard-cord::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: #4A90D9;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #4A90D9;
+}
+
+.lanyard-metal-clip {
+    width: 24px;
+    height: 28px;
+    background: linear-gradient(135deg, #e0e0e0 0%, #888888 50%, #444444 100%);
+    border-radius: 4px;
+    margin-top: -4px;
+    position: relative;
+    z-index: 3;
+    border: 1px solid #777;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.lanyard-metal-clip::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    border-bottom: none;
+}
+
+/* Badge Card Container — ZOOMED & IMPACTFUL */
+.badge-card {
+    width: 320px;
+    height: 440px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.15s ease-out, box-shadow 0.3s ease, width 0.3s ease, height 0.3s ease;
+    cursor: grab;
+    margin-top: -6px;
+}
+
+.badge-card:active {
+    cursor: grabbing;
+}
+
+/* Zoom Mode class applied via JS button toggle */
+.badge-card.zoomed {
+    width: 360px;
+    height: 490px;
+    transform: scale(1.08);
+}
+
+.badge-card:hover {
+    box-shadow: 0 15px 35px rgba(74, 144, 217, 0.25);
+}
+
+.badge-front, .badge-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1.5px solid #2a2d34;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Front Face Styling */
+.badge-front {
+    background: linear-gradient(165deg, #16181d 0%, #0d0e11 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    position: relative;
+}
+
+.badge-front::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 50%, rgba(74, 144, 217, 0.04) 100%);
+    pointer-events: none;
+}
+
+.badge-header-strip {
+    width: calc(100% + 48px);
+    height: 36px;
+    background: linear-gradient(90deg, #1c4b79 0%, #4A90D9 50%, #1c4b79 100%);
+    margin: -24px -24px 16px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.badge-header-strip span {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.badge-clip-slot {
+    width: 45px;
+    height: 8px;
+    background: #0a0a0a;
+    border-radius: 4px;
+    border: 1px solid #333;
+    margin-bottom: 14px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.8);
+}
+
+/* RECTANGULAR STUDENT ID PHOTO FRAME (Strictly Angular & Crisp) */
+.badge-profile-pic {
+    width: 115px;
+    height: 140px;
+    border-radius: 4px; /* Crisp rectangular card styling */
+    background: #0f1115;
+    border: 2px solid #4A90D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6), inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.badge-profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 10%;
+    filter: contrast(1.05) brightness(1.02);
+}
+
+.photo-watermark {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    background: rgba(10, 10, 10, 0.85);
+    color: #4A90D9;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.55rem;
+    font-weight: 600;
+    padding: 2px 5px;
+    border-radius: 2px;
+    border: 1px solid rgba(74, 144, 217, 0.4);
+    letter-spacing: 0.5px;
+}
+
+.badge-name {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.15rem;
+    color: #f0f0f0;
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.badge-title {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.78rem;
+    color: #4A90D9;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.badge-subtitle {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.badge-divider {
+    width: 85%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #333 50%, transparent 100%);
+    margin: 14px 0 10px;
+}
+
+.badge-university {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.65rem;
+    color: #aaa;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.badge-year {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.7rem;
+    color: #4A90D9;
+    margin-top: 4px;
+}
+
+.badge-barcode-container {
+    width: 80%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.badge-barcode {
+    width: 100%;
+    height: 22px;
+    background: repeating-linear-gradient(
+        90deg,
+        #e0e0e0 0,
+        #e0e0e0 2px,
+        transparent 2px,
+        transparent 5px,
+        #e0e0e0 5px,
+        #e0e0e0 9px,
+        transparent 9px,
+        transparent 11px
+    );
+    opacity: 0.8;
+}
+
+.barcode-text {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.58rem;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+/* Back Face Styling */
+.badge-back {
+    background: linear-gradient(165deg, #111317 0%, #08090b 100%);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: relative;
+}
+
+.back-strip {
+    background: linear-gradient(90deg, #222 0%, #333 50%, #222 100%) !important;
+}
+
+.back-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ccc;
+    font-size: 0.8rem;
+    margin: 8px 0;
+    font-family: 'Fira Code', monospace;
+    width: 100%;
+    padding: 6px 10px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 4px;
+    border: 1px solid #222;
+}
+
+.back-contact-item svg {
+    width: 16px;
+    height: 16px;
+    color: #4A90D9;
+    shrink: 0;
+}
+
+.back-tagline {
+    font-style: italic;
+    color: #888;
+    font-size: 0.82rem;
+    text-align: center;
+    margin: 22px 0 14px;
+    line-height: 1.4;
+}
+
+.back-scroll-hint {
+    color: #4A90D9;
+    font-size: 0.72rem;
+    font-family: 'Fira Code', monospace;
+}
+
+/* LIGHT MODE LANYARD BADGE STYLING */
+body.light-mode .badge-front {
+    background: linear-gradient(165deg, #ffffff 0%, #f1f5f9 100%);
+    border-color: #cbd5e1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .badge-back {
+    background: linear-gradient(165deg, #f8fafc 0%, #e2e8f0 100%);
+    border-color: #cbd5e1;
+}
+
+body.light-mode .badge-name {
+    color: #0f172a;
+    text-shadow: none;
+}
+
+body.light-mode .badge-title {
+    color: #2563eb;
+}
+
+body.light-mode .badge-subtitle {
+    color: #475569;
+}
+
+body.light-mode .badge-university {
+    color: #334155;
+}
+
+body.light-mode .badge-barcode {
+    opacity: 0.9;
+    background: repeating-linear-gradient(
+        90deg,
+        #0f172a 0,
+        #0f172a 2px,
+        transparent 2px,
+        transparent 5px,
+        #0f172a 5px,
+        #0f172a 9px,
+        transparent 9px,
+        transparent 11px
+    );
+}
+
+body.light-mode .back-contact-item {
+    background: #ffffff;
+    border-color: #cbd5e1;
+    color: #0f172a;
+}

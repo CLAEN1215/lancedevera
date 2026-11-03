@@ -1,0 +1,18 @@
+{
+  "name": "lance-de-vera-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Lance De Vera — Network & Security Architect Portfolio",
+  "scripts": {
+    "dev": "npx serve .",
+    "deploy": "npx vercel --prod"
+  },
+  "keywords": [
+    "portfolio",
+    "cybersecurity",
+    "network-security",
+    "systems-architecture"
+  ],
+  "author": "Lance De Vera",
+  "license": "MIT"
+}

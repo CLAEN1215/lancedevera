@@ -1,0 +1,212 @@
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+/* TABLET */
+@media (max-width: 1023px) {
+    #sidebar {
+        width: 50px;
+    }
+
+    .nav-link span {
+        display: none;
+    }
+
+    #content {
+        margin-left: 50px;
+    }
+
+    .section {
+        padding: 60px 40px;
+    }
+
+    footer {
+        margin-left: 50px;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item, 
+    .timeline-item.left, 
+    .timeline-item.right {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+
+    .timeline-badge {
+        left: 12px !important;
+        right: auto !important;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .badge-card {
+        width: 280px;
+        height: 385px;
+    }
+
+    .badge-card.zoomed {
+        width: 310px;
+        height: 425px;
+        transform: scale(1.04);
+    }
+
+    .lanyard-cord {
+        height: 110px;
+    }
+
+    .photo-frame.flip-card-container {
+        width: 380px;
+        height: 285px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    #sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+    }
+
+    #sidebar.open {
+        transform: translateX(0);
+        width: 200px;
+        z-index: 2000;
+    }
+
+    .nav-link span {
+        display: inline; /* restore text in open sidebar */
+    }
+
+    /* Hamburger menu button */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 2001;
+        width: 35px;
+        height: 35px;
+        background: #111;
+        border: 1px solid #222;
+        border-radius: 4px;
+        padding: 6px;
+        cursor: pointer;
+    }
+    
+    .hamburger span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #e0e0e0;
+        transition: 0.3s;
+    }
+
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 1999;
+    }
+    
+    .sidebar-overlay.active {
+        display: block;
+    }
+
+    #content {
+        margin-left: 0;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    footer {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .timeline::before {
+        left: 15px;
+    }
+
+    .timeline-item {
+        padding-left: 40px;
+    }
+
+    .timeline-badge {
+        left: 8px !important;
+    }
+
+    .student-card {
+        max-width: 100%;
+    }
+
+    .photo-frame.flip-card-container {
+        width: 310px;
+        height: 235px;
+    }
+
+    .family-photo-tabs, .photo-tabs {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .photo-tab-btn {
+        width: 100%;
+        max-width: 280px;
+        font-size: 0.72rem;
+    }
+
+    .vision-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .badge-card {
+        width: 250px;
+        height: 350px;
+    }
+
+    .badge-card.zoomed {
+        width: 280px;
+        height: 390px;
+        transform: scale(1.02);
+    }
+
+    .lanyard-cord {
+        height: 80px;
+    }
+
+    .personal-statement {
+        font-size: 1rem;
+    }
+
+    .family-quote {
+        font-size: 0.95rem;
+    }
+
+    .proof-preview {
+        display: none !important; /* Only use modal on mobile */
+    }
+}

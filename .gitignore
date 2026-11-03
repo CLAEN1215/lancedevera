@@ -1,0 +1,22 @@
+# Dependency directories
+node_modules/
+
+# Development scratch files & archives
+scratch/
+*.bak
+*.bak*
+*.tmp
+*.txt
+*.zip
+extracted.html
+New folder/
+PORTFOLIO PROJECT/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment / local configs
+.env*.local
+.vercel
