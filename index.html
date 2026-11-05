@@ -1421,138 +1421,172 @@
   </div>
   <div class="deck-slide" id="slide-1" data-slide="1" data-hash="about" data-title="ABOUT ME">
     <div class="deck-slide-inner">
-      <section class="w-full" id="about">
+      <section class="w-full py-2 sm:py-4" id="about">
         <div class="w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
-          <!-- Section Index Header -->
-          <div class="flex items-baseline justify-between border-b border-surface-container/70 pb-2 mb-3 sm:mb-5 reveal-on-scroll">
-            <div class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-primary"></span>
-              <span class="font-label-caps text-[11px] sm:text-label-caps uppercase tracking-widest text-primary font-bold">
-                02 // about-me.md [PROFILE]
+          
+          <!-- Section Header matching Rubric & Premium Aesthetic -->
+          <div class="flex items-end justify-between border-b border-surface-container/70 pb-2 mb-3 sm:mb-4 reveal-on-scroll">
+            <div>
+              <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary/10 border border-primary/25 text-primary font-mono-code text-[10px] sm:text-[11px] font-semibold mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Who I am
               </span>
+              <h2 class="font-display-hero text-2xl sm:text-3xl font-bold tracking-tight text-primary">
+                About Me
+              </h2>
             </div>
-            <span class="font-label-meta text-[10px] sm:text-label-meta text-secondary font-mono-code">
-              ACADEMIC &amp; TECHNICAL PROFILE
-            </span>
+            <div class="flex items-center gap-3">
+              <span class="font-mono-code text-[10px] sm:text-[11px] text-secondary hidden sm:inline">
+                CITCS // BSIT - 1F - B
+              </span>
+              <a href="assets/docs/lance-de-vera-resume.pdf" download="Lance-De-Vera-Resume.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-surface-container-low border border-outline/30 hover:border-primary text-primary font-mono-code text-[11px] transition-colors">
+                <span class="material-symbols-outlined text-[14px]">download</span>
+                <span>Resume</span>
+              </a>
+            </div>
           </div>
 
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-7 lg:gap-8 items-center">
+          <!-- 3-Column Bento Grid matching Rubric Categories -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-3.5 reveal-on-scroll text-left">
             
-            <!-- Left Column: Compact Profile Card -->
-            <div class="lg:col-span-5 flex flex-col items-center sm:items-start reveal-on-scroll">
-              <div class="w-full max-w-[390px] p-4 sm:p-5 bg-surface-container-lowest rounded-2xl sm:rounded-3xl shadow-sm border border-outline/25 flex flex-col space-y-3.5">
-                
-                <!-- Top identity row: Formal Color Portrait Avatar + Name -->
-                <div class="flex items-center gap-3.5">
-                  <div class="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl overflow-hidden border border-outline/30 bg-surface-container-low shrink-0 shadow-sm">
+            <!-- Card 1: Profile (Spans 2 rows on desktop) -->
+            <div class="lg:row-span-2 p-3.5 sm:p-4 rounded-2xl bg-surface-container-lowest border border-outline/25 flex flex-col justify-between hover:border-primary/40 transition-colors shadow-sm">
+              <div>
+                <div class="flex items-center justify-between pb-2 mb-2 border-b border-surface-container/60">
+                  <span class="font-display-hero text-[13px] sm:text-[14px] font-bold text-primary flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[17px] text-primary">badge</span>
+                    Profile
+                  </span>
+                  <span class="w-2 h-2 rounded-full bg-emerald-500" title="Enrolled"></span>
+                </div>
+
+                <!-- Lance Photo & Name Header -->
+                <div class="flex items-center gap-3 mb-3 p-2 rounded-xl bg-surface-container-low/40 border border-outline/15">
+                  <div class="w-12 h-12 rounded-xl overflow-hidden border border-outline/30 bg-surface-container shrink-0">
                     <img src="lance-formal-color.png" alt="Lance De Vera" class="w-full h-full object-cover object-top" />
                   </div>
                   <div class="min-w-0">
-                    <h3 class="font-display-hero text-[18px] sm:text-[20px] font-bold text-primary leading-tight">Lance De Vera</h3>
-                    <p class="font-mono-code text-[11px] text-secondary tracking-wide mt-0.5">BSIT — Network &amp; Security</p>
-                    <div class="inline-flex items-center gap-1.5 mt-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-600 dark:text-emerald-400 font-mono-code text-[9.5px] font-semibold">
-                      <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                      <span>COLLEGE STUDENT / BSIT</span>
-                    </div>
+                    <div class="font-display-hero text-[14px] sm:text-[15px] font-bold text-primary truncate leading-tight">Lance De Vera</div>
+                    <div class="font-mono-code text-[10px] text-secondary truncate">Aspiring Security Engineer</div>
                   </div>
                 </div>
 
-                <!-- Quick Academic Summary Table -->
-                <div class="border-t border-surface-container/70 pt-3 space-y-2 font-mono-code text-[11px]">
-                  <div class="flex items-center justify-between text-secondary">
-                    <span class="text-on-surface-variant/80">University:</span>
-                    <span class="text-primary font-semibold text-right">Univ. of the Cordilleras</span>
-                  </div>
-                  <div class="flex items-center justify-between text-secondary">
-                    <span class="text-on-surface-variant/80">Program:</span>
-                    <span class="text-primary font-semibold text-right">BS Information Tech</span>
-                  </div>
-                  <div class="flex items-center justify-between text-secondary">
-                    <span class="text-on-surface-variant/80">Major:</span>
-                    <span class="text-primary font-semibold text-right">Network &amp; Security</span>
-                  </div>
-                  <div class="flex items-center justify-between text-secondary">
-                    <span class="text-on-surface-variant/80">Location:</span>
-                    <span class="text-primary font-semibold text-right">Pangasinan / Baguio, PH</span>
-                  </div>
-                </div>
+                <!-- Profile Info Bullets (Exact from rubric) -->
+                <ul class="space-y-1.5 font-mono-code text-[11px] text-on-surface-variant">
+                  <li class="flex items-start gap-1.5">
+                    <span class="text-primary font-bold">•</span>
+                    <div><span class="text-secondary font-semibold">Name:</span> <span class="text-primary font-semibold">Lance De Vera</span></div>
+                  </li>
+                  <li class="flex items-start gap-1.5">
+                    <span class="text-primary font-bold">•</span>
+                    <div><span class="text-secondary font-semibold">Program:</span> <span class="text-primary">Bachelor of Science in Information Technology</span></div>
+                  </li>
+                  <li class="flex items-start gap-1.5">
+                    <span class="text-primary font-bold">•</span>
+                    <div><span class="text-secondary font-semibold">Major:</span> <span class="text-primary font-semibold">Network and Security</span></div>
+                  </li>
+                  <li class="flex items-start gap-1.5">
+                    <span class="text-primary font-bold">•</span>
+                    <div><span class="text-secondary font-semibold">School:</span> <span class="text-primary">University of the Cordilleras</span></div>
+                  </li>
+                  <li class="flex items-start gap-1.5">
+                    <span class="text-primary font-bold">•</span>
+                    <div><span class="text-secondary font-semibold">Section:</span> <span class="text-primary font-mono font-semibold">CITCS - 1F - GROUP B</span></div>
+                  </li>
+                  <li class="flex items-start gap-1.5">
+                    <span class="text-primary font-bold">•</span>
+                    <div><span class="text-secondary font-semibold">Role:</span> <span class="text-primary">Student / Aspiring Security Engineer</span></div>
+                  </li>
+                </ul>
+              </div>
 
-                <!-- Resume Download Button -->
-                <div class="pt-1.5 border-t border-surface-container/70">
-                  <a href="assets/docs/lance-de-vera-resume.pdf" download="Lance-De-Vera-Resume.pdf" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-primary text-on-primary font-label-caps text-[10.5px] uppercase tracking-wider font-bold hover:opacity-90 transition-opacity shadow-sm">
-                    <span class="material-symbols-outlined text-[15px]">description</span>
-                    <span>Download Academic Resume</span>
-                  </a>
-                </div>
-
+              <!-- Compact bottom badge -->
+              <div class="mt-3 pt-2.5 border-t border-surface-container/60 flex items-center justify-between text-[10px] font-mono-code text-secondary">
+                <span>UC • CITCS Department</span>
+                <span class="text-primary font-semibold">Baguio City</span>
               </div>
             </div>
 
-            <!-- Right Column: Simple Narrative & 4 Core Focus Areas -->
-            <div class="lg:col-span-7 flex flex-col space-y-3 sm:space-y-3.5 lg:pl-2 reveal-on-scroll">
-              
-              <!-- Headline & Bio Paragraphs -->
+            <!-- Card 2: Introduction -->
+            <div class="p-3.5 sm:p-4 rounded-2xl bg-surface-container-lowest border border-outline/25 hover:border-primary/40 transition-colors shadow-sm flex flex-col">
+              <div class="flex items-center gap-2 pb-2 mb-2 border-b border-surface-container/60">
+                <span class="material-symbols-outlined text-[17px] text-primary">person</span>
+                <span class="font-display-hero text-[13px] sm:text-[14px] font-bold text-primary">Introduction</span>
+              </div>
+              <p class="text-[11px] sm:text-[12px] leading-relaxed text-on-surface-variant">
+                I am a first-year IT student specializing in Network and Security who enjoys understanding how interconnected systems operate and defending them against vulnerabilities. I am actively building my capabilities through academic coursework, laboratory simulations, and self-driven projects.
+              </p>
+            </div>
+
+            <!-- Card 3: Interests -->
+            <div class="p-3.5 sm:p-4 rounded-2xl bg-surface-container-lowest border border-outline/25 hover:border-primary/40 transition-colors shadow-sm flex flex-col">
+              <div class="flex items-center gap-2 pb-2 mb-2 border-b border-surface-container/60">
+                <span class="material-symbols-outlined text-[17px] text-primary">interests</span>
+                <span class="font-display-hero text-[13px] sm:text-[14px] font-bold text-primary">Interests</span>
+              </div>
+              <p class="text-[11px] sm:text-[12px] leading-relaxed text-on-surface-variant">
+                Network architecture, defensive cyber operations, Linux system administration, and zero-trust cloud principles. I enjoy experimenting with packet inspection, configuring secure subnets, and turning technical concepts into reliable, high-uptime environments.
+              </p>
+            </div>
+
+            <!-- Card 4: How I work -->
+            <div class="p-3.5 sm:p-4 rounded-2xl bg-surface-container-lowest border border-outline/25 hover:border-primary/40 transition-colors shadow-sm flex flex-col">
+              <div class="flex items-center gap-2 pb-2 mb-2 border-b border-surface-container/60">
+                <span class="material-symbols-outlined text-[17px] text-primary">psychology</span>
+                <span class="font-display-hero text-[13px] sm:text-[14px] font-bold text-primary">How I work</span>
+              </div>
+              <p class="text-[11px] sm:text-[12px] leading-relaxed text-on-surface-variant">
+                I stay willing to learn, break complex problems into small methodical steps, and keep improving with each project. I value structured documentation, disciplined troubleshooting, and constructive team feedback.
+              </p>
+            </div>
+
+            <!-- Card 5: Technical skills -->
+            <div class="p-3.5 sm:p-4 rounded-2xl bg-surface-container-lowest border border-outline/25 hover:border-primary/40 transition-colors shadow-sm flex flex-col justify-between">
               <div>
-                <span class="font-mono-code text-[10px] uppercase tracking-widest text-secondary block mb-1">
-                  [ PERSONAL STATEMENT &amp; OBJECTIVE ]
-                </span>
-                <h2 class="font-display-hero text-[20px] sm:text-[24px] lg:text-[26px] font-bold text-primary leading-snug">
-                  Dedicated to engineering robust networks, secure systems, and resilient infrastructure.
-                </h2>
-              </div>
-
-              <div class="space-y-2 text-on-surface-variant text-[12.5px] sm:text-[13.5px] leading-relaxed">
-                <p>
-                  I am a Bachelor of Science in Information Technology student at the <strong>University of the Cordilleras</strong>, specializing in <strong>Network and Security</strong>. My studies and practical projects focus on computer network operations, secure operating environments, and defensive cybersecurity practices.
-                </p>
-                <p class="text-secondary text-[12px] sm:text-[12.5px]">
-                  From configuring Linux servers and analyzing network packets to automating system tasks and studying modern zero-trust frameworks, I aim to merge theoretical rigor with practical problem-solving. My goal is to build secure, high-uptime digital infrastructure that organizations can rely on.
-                </p>
-              </div>
-
-              <!-- 4 Simple Focus Boxes (2x2 Grid) -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
-                <div class="p-2.5 sm:p-3 rounded-xl bg-surface-container-low/50 border border-outline/20">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="material-symbols-outlined text-[17px] text-primary">shield</span>
-                    <span class="font-semibold text-[12px] sm:text-[12.5px] text-primary">Cyber Defense</span>
-                  </div>
-                  <p class="text-[10.5px] sm:text-[11px] text-secondary leading-normal">
-                    Vulnerability auditing, IAM access controls, defensive posture, and security baselines.
-                  </p>
+                <div class="flex items-center gap-2 pb-2 mb-2 border-b border-surface-container/60">
+                  <span class="material-symbols-outlined text-[17px] text-primary">terminal</span>
+                  <span class="font-display-hero text-[13px] sm:text-[14px] font-bold text-primary">Technical skills</span>
                 </div>
-
-                <div class="p-2.5 sm:p-3 rounded-xl bg-surface-container-low/50 border border-outline/20">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="material-symbols-outlined text-[17px] text-primary">lan</span>
-                    <span class="font-semibold text-[12px] sm:text-[12.5px] text-primary">Network Architecture</span>
-                  </div>
-                  <p class="text-[10.5px] sm:text-[11px] text-secondary leading-normal">
-                    Routing &amp; switching, subnet design, packet analysis, and dependable network setups.
-                  </p>
-                </div>
-
-                <div class="p-2.5 sm:p-3 rounded-xl bg-surface-container-low/50 border border-outline/20">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="material-symbols-outlined text-[17px] text-primary">terminal</span>
-                    <span class="font-semibold text-[12px] sm:text-[12.5px] text-primary">Linux &amp; Systems</span>
-                  </div>
-                  <p class="text-[10.5px] sm:text-[11px] text-secondary leading-normal">
-                    Bash scripting, Linux administration (Debian/Ubuntu), CLI workflows, and cloud servers.
-                  </p>
-                </div>
-
-                <div class="p-2.5 sm:p-3 rounded-xl bg-surface-container-low/50 border border-outline/20">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="material-symbols-outlined text-[17px] text-primary">code</span>
-                    <span class="font-semibold text-[12px] sm:text-[12.5px] text-primary">Software &amp; Tools</span>
-                  </div>
-                  <p class="text-[10.5px] sm:text-[11px] text-secondary leading-normal">
-                    Python automation scripts, full-stack web applications, REST APIs, and version control.
-                  </p>
+                <div class="flex flex-wrap gap-1.5 pt-0.5">
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Networking</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Linux / CLI</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Cyber Defense</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Python</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Zero Trust</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">IAM &amp; Audit</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Troubleshooting</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Git &amp; GitHub</span>
                 </div>
               </div>
+            </div>
 
+            <!-- Card 6: My Goals (Spans 2 columns on desktop) -->
+            <div class="lg:col-span-2 p-3.5 sm:p-4 rounded-2xl bg-surface-container-lowest border border-outline/25 hover:border-primary/40 transition-colors shadow-sm flex flex-col">
+              <div class="flex items-center gap-2 pb-2 mb-2 border-b border-surface-container/60">
+                <span class="material-symbols-outlined text-[17px] text-primary">flag</span>
+                <span class="font-display-hero text-[13px] sm:text-[14px] font-bold text-primary">My Goals</span>
+              </div>
+              <p class="text-[11px] sm:text-[12px] leading-relaxed text-on-surface-variant">
+                I aim to become a highly competent Network and Cyber Defense professional who architects resilient digital infrastructures. I want to gain real-world industry experience, earn advanced certifications (such as CompTIA Security+ and CCNA), and collaborate with experienced engineers on enterprise security challenges.
+              </p>
+            </div>
+
+            <!-- Card 7: Strengths -->
+            <div class="p-3.5 sm:p-4 rounded-2xl bg-surface-container-lowest border border-outline/25 hover:border-primary/40 transition-colors shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-2 pb-2 mb-2 border-b border-surface-container/60">
+                  <span class="material-symbols-outlined text-[17px] text-primary">bolt</span>
+                  <span class="font-display-hero text-[13px] sm:text-[14px] font-bold text-primary">Strengths</span>
+                </div>
+                <div class="flex flex-wrap gap-1.5 pt-0.5">
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Willing to learn</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Attention to detail</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Analytical thinking</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Disciplined</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Patient</span>
+                  <span class="px-2.5 py-1 rounded-full text-[10.5px] font-mono-code bg-surface-container-low border border-outline/30 text-primary">Adaptable</span>
+                </div>
+              </div>
             </div>
 
           </div>
