@@ -1361,74 +1361,56 @@
   <div class="deck-slide active" id="slide-0" data-slide="0" data-hash="home" data-title="HOME">
     <div class="deck-slide-inner deck-slide-inner--hero">
       <section class="w-full select-none" id="home">
-        <div class="w-full max-w-[1040px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-[920px] lg:max-w-[980px] mx-auto px-4 sm:px-6">
           
-          <!-- Master Harmonic Studio Lockup: 1/3 Portrait + Aligned Typography & Micro-Pills -->
-          <div class="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-7 sm:gap-10 lg:gap-14">
+          <!-- Top Hero Group: Halftone/Suit Portrait + Typography & Bio closely coupled (Slightly Bigger) -->
+          <div class="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-6 sm:gap-8 lg:gap-10">
             
-            <!-- 1/3 Width Portrait with Studio Ambient Light & Soft Dissolve Base -->
-            <div class="shrink-0 flex items-center justify-center w-full sm:w-auto">
-              <div class="relative w-[210px] sm:w-[270px] md:w-[310px] lg:w-[350px] flex items-center justify-center group">
-                <!-- Atmospheric Studio Spotlight -->
-                <div class="absolute inset-0 -inset-x-6 -inset-y-8 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.06)_0%,transparent_70%)] dark:bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.07)_0%,transparent_70%)] pointer-events-none filter blur-2xl"></div>
-                
-                <!-- Portrait Image with Feathered Dissolve Base -->
+            <!-- Portrait: Slightly Bigger Than Before with Smooth Bottom Fade -->
+            <div class="shrink-0 flex items-center justify-center">
+              <div class="relative w-[165px] sm:w-[235px] md:w-[270px] lg:w-[295px] flex items-center justify-center group">
                 <img id="halftone-pfp-img" 
-                     src="lance-suit-portrait.png?v=5" 
+                     src="lance-suit-portrait.png?v=6" 
                      alt="Lance De Vera" 
-                     class="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.015] pointer-events-none select-none filter contrast-[1.03]" 
-                     style="border:none!important;background:transparent!important;box-shadow:none!important;outline:none!important;-webkit-mask-image:linear-gradient(to bottom, black 72%, transparent 100%);mask-image:linear-gradient(to bottom, black 72%, transparent 100%);" />
+                     class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02] pointer-events-none select-none filter contrast-[1.02]" 
+                     style="border:none!important;background:transparent!important;box-shadow:none!important;outline:none!important;" />
               </div>
             </div>
 
-            <!-- Typography & Action Dock with Harmonic Eye-Line Alignment -->
-            <div class="flex flex-col justify-center text-center sm:text-left flex-1 min-w-0 sm:pt-4 lg:pt-6">
-              
-              <!-- Refined Status Eyebrow -->
-              <div class="flex items-center justify-center sm:justify-start gap-2 mb-2 sm:mb-2.5 font-mono-code">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span class="text-[9.5px] sm:text-[10px] uppercase tracking-[0.16em] text-emerald-400 font-semibold">[SYS_ID: LDEV-SEC // CITCS NETSEC]</span>
+            <!-- Hero Typography, Bio, and Lowercase Socials with ↗ (Slightly Bigger) -->
+            <div class="flex flex-col justify-center text-center sm:text-left flex-1 min-w-0">
+              <div class="flex items-center justify-center sm:justify-start gap-2 mb-2.5 font-mono-code">
+                <span class="w-1.5 h-1.5 bg-primary"></span>
+                <span class="text-[10px] sm:text-[10.5px] uppercase px-2.5 py-0.5 border border-primary/30 text-primary tracking-widest">[SYS_ID: LDEV-SEC // 2026]</span>
               </div>
               
-              <!-- Authoritative Single-Line Headline -->
-              <h1 class="font-display-hero text-[34px] sm:text-[44px] lg:text-[50px] xl:text-[54px] font-bold tracking-[-0.035em] text-primary leading-[1.0] select-none">
-                Lance De Vera
+              <h1 class="font-display-hero text-[38px] sm:text-[50px] lg:text-[56px] font-bold tracking-tight text-primary leading-[0.94] select-none">
+                Lance<br class="hidden sm:inline" /> De Vera
               </h1>
 
-              <!-- Domain Focus Subtitle -->
-              <p class="font-headline-md text-[13.5px] sm:text-[15px] lg:text-[16px] text-primary font-medium tracking-tight mt-2.5 sm:mt-3">
-                Systems Architecture &amp; Defensive Security Engineer<span class="cli-cursor"></span>
+              <p class="font-headline-md text-[14px] sm:text-[16px] lg:text-[17px] text-primary font-medium tracking-tight mt-3">
+                Engineering systems. Securing networks. Building the future.<span class="cli-cursor"></span>
               </p>
 
-              <!-- Focused Bio Copy -->
-              <p class="font-body-lg text-[12px] sm:text-[13px] text-secondary leading-relaxed mt-2.5 max-w-[470px] opacity-85">
-                Specializing in zero-trust environments, cloud infrastructure, and practical cyber defense at the University of the Cordilleras.
+              <p class="font-body-lg text-[13px] sm:text-[13.5px] lg:text-[14px] text-secondary leading-relaxed mt-2.5 max-w-[500px] opacity-85">
+                Specializing in defensive security, zero-trust architecture, and resilient cloud systems.
               </p>
 
-              <!-- Sleek Interactive Micro-Pills Dock -->
-              <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-2.5 mt-4 sm:mt-5 pt-0.5 font-mono-code text-[11px] sm:text-[11.5px]">
-                <a href="https://github.com/CLAEN1215" target="_blank" rel="noopener noreferrer" 
-                   class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-outline/25 bg-surface-container-lowest/50 hover:border-primary/40 hover:bg-surface-container-low text-secondary hover:text-primary transition-all duration-200 group">
-                  <span>github</span> 
-                  <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform opacity-75">↗</span>
+              <!-- Minimal Lowercase Social Links with Arrows ↗ (Slightly Bigger) -->
+              <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6 mt-4.5 sm:mt-6 pt-0.5 font-mono-code text-[12.5px] sm:text-[13.5px] text-secondary">
+                <a href="https://github.com/CLAEN1215" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-1 group">
+                  <span>github</span> <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
                 </a>
-                <a href="https://www.linkedin.com/in/lance-de-vera" target="_blank" rel="noopener noreferrer" 
-                   class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-outline/25 bg-surface-container-lowest/50 hover:border-primary/40 hover:bg-surface-container-low text-secondary hover:text-primary transition-all duration-200 group">
-                  <span>linkedin</span> 
-                  <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform opacity-75">↗</span>
+                <a href="https://www.linkedin.com/in/lance-de-vera" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-1 group">
+                  <span>linkedin</span> <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
                 </a>
-                <a href="https://www.facebook.com/lance.de.vera.658636/" target="_blank" rel="noopener noreferrer" 
-                   class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-outline/25 bg-surface-container-lowest/50 hover:border-primary/40 hover:bg-surface-container-low text-secondary hover:text-primary transition-all duration-200 group">
-                  <span>facebook</span> 
-                  <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform opacity-75">↗</span>
+                <a href="https://www.facebook.com/lance.de.vera.658636/" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-1 group">
+                  <span>facebook</span> <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
                 </a>
-                <a href="mailto:dvlance112208@gmail.com" 
-                   class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-outline/25 bg-surface-container-lowest/50 hover:border-primary/40 hover:bg-surface-container-low text-secondary hover:text-primary transition-all duration-200 group">
-                  <span>email</span> 
-                  <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform opacity-75">↗</span>
+                <a href="mailto:dvlance112208@gmail.com" class="hover:text-primary transition-colors flex items-center gap-1 group">
+                  <span>email</span> <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
                 </a>
               </div>
-
             </div>
 
           </div>
@@ -5272,7 +5254,7 @@
   if (!pfpImg) return;
 
   function updateThemePortrait() {
-    const targetSrc = 'lance-suit-portrait.png?v=5';
+    const targetSrc = 'lance-suit-portrait.png?v=6';
     if (!pfpImg.src.endsWith(targetSrc)) {
       pfpImg.src = targetSrc;
     }
