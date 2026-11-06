@@ -1421,284 +1421,236 @@
   </div>
   <div class="deck-slide" id="slide-1" data-slide="1" data-hash="about" data-title="ABOUT ME">
     <div class="deck-slide-inner">
-      <section class="w-full py-0 select-none overflow-y-auto max-h-full" id="about">
-        <div class="w-full max-w-[1040px] mx-auto px-4 sm:px-6">
+      <section class="w-full py-2 sm:py-4 select-none overflow-y-auto max-h-full pr-1 custom-scrollbar" id="about">
+        <div class="w-full max-w-[1060px] mx-auto px-4 sm:px-6">
           
-          <!-- Master Editorial Card (Rubric & Reference Design) -->
-          <div class="w-full p-4 sm:p-5 lg:p-5.5 rounded-2xl sm:rounded-3xl bg-surface-container-lowest border border-outline/20 shadow-sm text-left">
+          <!-- Master Editorial Card with Generous Breathing Space -->
+          <div class="w-full p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl bg-surface-container-lowest border border-outline/20 shadow-sm text-left">
             
             <!-- Top Section Header -->
-            <div class="flex items-center justify-between pb-2 mb-2.5 sm:mb-3 border-b border-surface-container/60">
-              <span class="font-mono-code text-[10.5px] sm:text-[11px] font-bold text-primary tracking-widest uppercase">ABOUT / 01</span>
-              <span class="font-mono-code text-[9.5px] sm:text-[10px] text-secondary tracking-widest uppercase">WHO I AM</span>
+            <div class="flex items-center justify-between pb-3 mb-6 sm:mb-8 border-b border-surface-container/60">
+              <span class="font-mono-code text-[11px] sm:text-xs font-bold text-primary tracking-widest uppercase">ABOUT / 01</span>
+              <span class="font-mono-code text-[10px] sm:text-[10.5px] text-secondary tracking-widest uppercase">WHO I AM</span>
             </div>
 
             <!-- ======================================================== -->
             <!-- 1. Introduction / Hero Section                            -->
             <!-- ======================================================== -->
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-3.5 sm:gap-4 items-center">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 sm:gap-8">
               
-              <!-- LEFT: Introduction & Labels -->
-              <div class="md:col-span-7 flex flex-col justify-center text-left">
-                <span class="font-mono-code text-[9px] sm:text-[9.5px] uppercase tracking-[0.16em] text-secondary mb-0.5">A LITTLE INTRODUCTION</span>
-                <h2 class="font-display-hero text-xl sm:text-2xl font-bold tracking-tight text-primary leading-tight">
+              <!-- LEFT: Headline & Bio Paragraph -->
+              <div class="flex-1 min-w-0">
+                <h2 class="font-display-hero text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-primary leading-[1.05] mb-3 sm:mb-4">
                   Getting to know me.
                 </h2>
-                <p class="text-[11px] sm:text-[11.5px] leading-relaxed text-secondary mt-1 max-w-[500px]">
-                  I'm Lance, a first-year IT student passionate about computer systems, network engineering, and practical cyber defense. I focus on building reliable architectures and understanding how technology works from the ground up.
+                <p class="text-[13px] sm:text-[14.5px] leading-relaxed text-secondary max-w-[580px]">
+                  I'm Lance De Vera, a first-year BSIT student at the University of the Cordilleras, specializing in Network &amp; Security. I'm interested in understanding how systems work and building secure, reliable digital solutions.
                 </p>
-                <div class="flex flex-wrap items-center gap-1.5 mt-2 font-mono-code text-[9.5px] sm:text-[10px]">
-                  <span class="px-2 py-0.5 rounded-md bg-surface-container border border-outline/20 text-secondary">Developer</span>
-                  <span class="text-outline">•</span>
-                  <span class="px-2 py-0.5 rounded-md bg-surface-container border border-outline/20 text-secondary">Learner</span>
-                  <span class="text-outline">•</span>
-                  <span class="px-2 py-0.5 rounded-md bg-surface-container border border-outline/20 text-secondary">Problem Solver</span>
-                </div>
               </div>
 
-              <!-- RIGHT: Profile Photo & Academic Specs -->
-              <div class="md:col-span-5 flex items-center gap-3.5 sm:gap-4 md:justify-end">
-                <div class="w-[72px] h-[72px] sm:w-[84px] sm:h-[84px] rounded-2xl overflow-hidden border border-outline/25 bg-surface-container-low shrink-0 shadow-sm">
-                  <img src="lance-suit-portrait.png" alt="Lance De Vera" class="w-full h-full object-cover object-top filter contrast-[1.02]" />
-                </div>
-                <div class="flex flex-col text-left">
-                  <span class="font-mono-code text-[9.5px] text-secondary font-bold tracking-widest">01</span>
-                  <h3 class="font-display-hero text-[15px] sm:text-base font-bold text-primary leading-tight">Lance De Vera</h3>
-                  <p class="font-mono-code text-[10.5px] text-secondary mt-0.5">BS Information Technology</p>
-                  <div class="mt-1">
-                    <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container border border-outline/30 text-[9px] sm:text-[9.5px] font-mono-code text-primary font-medium">
-                      Network and Security
-                    </span>
+              <!-- RIGHT: Profile Photo Card with Divider & Identification -->
+              <div class="flex items-center gap-4 sm:gap-5 shrink-0 self-start lg:self-center">
+                <!-- Profile Photo -->
+                <div class="flex flex-col items-center">
+                  <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border border-outline/25 bg-surface-container-low shadow-sm">
+                    <img src="lance-suit-portrait.png" alt="Lance De Vera" class="w-full h-full object-cover object-top filter contrast-[1.02]" />
                   </div>
+                  <span class="font-mono-code text-[9px] uppercase tracking-widest text-secondary/70 mt-1.5">PROFILE PHOTO</span>
+                </div>
+
+                <!-- Vertical Divider -->
+                <div class="w-px h-16 sm:h-20 bg-surface-container/80 mx-1 shrink-0"></div>
+
+                <!-- Name & Academic Specs -->
+                <div class="flex flex-col">
+                  <h3 class="font-display-hero text-lg sm:text-xl font-bold text-primary leading-tight">Lance De Vera</h3>
+                  <p class="text-xs sm:text-[13px] text-secondary mt-1">BS Information Technology</p>
+                  <p class="text-xs sm:text-[13px] text-secondary">Network &amp; Security</p>
                 </div>
               </div>
 
             </div>
 
             <!-- ======================================================== -->
-            <!-- 2. Personal Details (Compact Two-Column Layout)          -->
+            <!-- 2. Personal Details (Aligned Column Grid with :)          -->
             <!-- ======================================================== -->
-            <div class="pt-2.5 sm:pt-3 mt-2.5 sm:mt-3 border-t border-surface-container/60">
-              <div class="flex items-center justify-between mb-1.5">
-                <span class="font-mono-code text-[9.5px] sm:text-[10px] uppercase tracking-[0.16em] text-secondary font-semibold">
-                  PERSONAL DETAILS
-                </span>
-                <span class="font-mono-code text-[9px] text-secondary">VERIFIED SPECS</span>
+            <div class="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-surface-container/60">
+              <div class="flex items-center gap-2 mb-4 text-primary font-mono-code text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
+                <span class="material-symbols-outlined text-[16px] text-secondary">person</span>
+                <span>PERSONAL DETAILS</span>
               </div>
               
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1 font-mono-code text-[10.5px] sm:text-[11px]">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2.5 font-mono-code text-[12.5px] sm:text-[13px]">
                 <!-- Column 1 -->
-                <div class="space-y-0.5 sm:space-y-1">
-                  <div class="flex items-baseline justify-between py-0.5 border-b border-surface-container/30">
-                    <span class="text-secondary">Full Name</span>
-                    <span class="text-primary font-semibold text-right">Lance De Vera</span>
+                <div class="space-y-2">
+                  <div class="grid grid-cols-[130px_16px_1fr] sm:grid-cols-[150px_16px_1fr] items-baseline">
+                    <span class="text-secondary">Full name</span>
+                    <span class="text-secondary/60">:</span>
+                    <span class="text-primary font-medium">Lance De Vera</span>
                   </div>
-                  <div class="flex items-baseline justify-between py-0.5 border-b border-surface-container/30">
+                  <div class="grid grid-cols-[130px_16px_1fr] sm:grid-cols-[150px_16px_1fr] items-baseline">
                     <span class="text-secondary">Nickname</span>
-                    <span class="text-primary font-semibold text-right">Lance</span>
+                    <span class="text-secondary/60">:</span>
+                    <span class="text-primary font-medium">Lance</span>
                   </div>
-                  <div class="flex items-baseline justify-between py-0.5 border-b border-surface-container/30">
+                  <div class="grid grid-cols-[130px_16px_1fr] sm:grid-cols-[150px_16px_1fr] items-baseline">
                     <span class="text-secondary">Age</span>
-                    <span class="text-primary font-semibold text-right">19</span>
+                    <span class="text-secondary/60">:</span>
+                    <span class="text-primary font-medium">18</span>
                   </div>
-                  <div class="flex items-baseline justify-between py-0.5 border-b border-surface-container/30">
-                    <span class="text-secondary">Date of Birth</span>
-                    <span class="text-primary font-semibold text-right">November 22, 2005</span>
-                  </div>
-                  <div class="flex items-baseline justify-between py-0.5 border-b border-surface-container/30">
-                    <span class="text-secondary">Place of Birth</span>
-                    <span class="text-primary font-semibold text-right">Pangasinan, Philippines</span>
+                  <div class="grid grid-cols-[130px_16px_1fr] sm:grid-cols-[150px_16px_1fr] items-baseline">
+                    <span class="text-secondary">Current residence</span>
+                    <span class="text-secondary/60">:</span>
+                    <span class="text-primary font-medium">Baguio City, Philippines</span>
                   </div>
                 </div>
 
                 <!-- Column 2 -->
-                <div class="space-y-0.5 sm:space-y-1">
-                  <div class="flex items-baseline justify-between py-0.5 border-b border-surface-container/30">
-                    <span class="text-secondary">Current Residence</span>
-                    <span class="text-primary font-semibold text-right">Pias, Mapandan, Pangasinan</span>
-                  </div>
-                  <div class="flex items-baseline justify-between py-0.5 border-b border-surface-container/30">
+                <div class="space-y-2">
+                  <div class="grid grid-cols-[130px_16px_1fr] sm:grid-cols-[150px_16px_1fr] items-baseline">
                     <span class="text-secondary">School</span>
-                    <span class="text-primary font-semibold text-right">Univ. of the Cordilleras</span>
+                    <span class="text-secondary/60">:</span>
+                    <span class="text-primary font-medium">University of the Cordilleras</span>
                   </div>
-                  <div class="flex items-baseline justify-between py-0.5 border-b border-surface-container/30">
-                    <span class="text-secondary">Course</span>
-                    <span class="text-primary font-semibold text-right">BS Information Technology</span>
+                  <div class="grid grid-cols-[130px_16px_1fr] sm:grid-cols-[150px_16px_1fr] items-baseline">
+                    <span class="text-secondary">Program</span>
+                    <span class="text-secondary/60">:</span>
+                    <span class="text-primary font-medium">BS Information Technology</span>
                   </div>
-                  <div class="flex items-baseline justify-between py-0.5 border-b border-surface-container/30">
+                  <div class="grid grid-cols-[130px_16px_1fr] sm:grid-cols-[150px_16px_1fr] items-baseline">
                     <span class="text-secondary">Specialization</span>
-                    <span class="text-primary font-semibold text-right">Network &amp; Security</span>
+                    <span class="text-secondary/60">:</span>
+                    <span class="text-primary font-medium">Network &amp; Security</span>
                   </div>
-                  <div class="flex items-baseline justify-between py-0.5 border-b border-surface-container/30">
+                  <div class="grid grid-cols-[130px_16px_1fr] sm:grid-cols-[150px_16px_1fr] items-baseline">
                     <span class="text-secondary">Section</span>
-                    <span class="text-primary font-semibold text-right">CITCS - 1F - GROUP B</span>
+                    <span class="text-secondary/60">:</span>
+                    <span class="text-primary font-medium">CITCS - 1F - GROUP B</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- ======================================================== -->
-            <!-- 3. A Bit More About Me (Narrative + 4 Info Blocks)       -->
+            <!-- 3. A Bit More About Me (4 Spaced Information Blocks)     -->
             <!-- ======================================================== -->
-            <div class="pt-2.5 sm:pt-3 mt-2.5 sm:mt-3 border-t border-surface-container/60">
-              <div class="flex items-center justify-between mb-1.5">
-                <span class="font-mono-code text-[9.5px] sm:text-[10px] uppercase tracking-[0.16em] text-secondary font-semibold">
-                  A BIT MORE ABOUT ME
-                </span>
+            <div class="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-surface-container/60">
+              <div class="flex items-center gap-2 mb-4 text-primary font-mono-code text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
+                <span class="material-symbols-outlined text-[16px] text-secondary">info</span>
+                <span>A BIT MORE ABOUT ME</span>
               </div>
 
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-3.5 items-start">
-                <!-- Main Narrative Paragraph -->
-                <div class="lg:col-span-5 text-left">
-                  <p class="text-[10.5px] sm:text-[11px] leading-relaxed text-secondary opacity-90">
-                    My passion for technology began with a curiosity about how interconnected systems communicate and how vulnerable networks can be fortified against modern threats. Through hands-on laboratory exercises, Linux administration, and collegiate coursework at UC Baguio, I channel that curiosity into disciplined engineering. Outside the terminal, I value clear communication, team collaboration, and continuous self-improvement.
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 text-left">
+                <!-- Background -->
+                <div class="space-y-1.5">
+                  <div class="flex items-center gap-2 text-primary">
+                    <span class="material-symbols-outlined text-[17px] text-primary">business_center</span>
+                    <span class="font-display-hero text-sm sm:text-[14.5px] font-bold">Background</span>
+                  </div>
+                  <p class="text-[12.5px] sm:text-[13px] leading-relaxed text-secondary">
+                    A first-year IT student building foundations through coursework and personal projects.
                   </p>
                 </div>
 
-                <!-- 4 Small Information Blocks (2x2 Grid) -->
-                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-2 text-left">
-                  <!-- Interests -->
-                  <div class="p-2 rounded-xl bg-surface-container-low/50 border border-outline/20">
-                    <div class="flex items-center gap-1.5 mb-0.5 text-primary">
-                      <span class="material-symbols-outlined text-[13px]">terminal</span>
-                      <span class="font-display-hero text-[10.5px] sm:text-[11px] font-bold">Interests</span>
-                    </div>
-                    <p class="text-[9.5px] sm:text-[10px] leading-relaxed text-secondary">
-                      Computer networking, defensive cyber operations, Linux systems, and resilient cloud architectures.
-                    </p>
+                <!-- Interests -->
+                <div class="space-y-1.5">
+                  <div class="flex items-center gap-2 text-primary">
+                    <span class="material-symbols-outlined text-[17px] text-primary">favorite_border</span>
+                    <span class="font-display-hero text-sm sm:text-[14.5px] font-bold">Interests</span>
                   </div>
+                  <p class="text-[12.5px] sm:text-[13px] leading-relaxed text-secondary">
+                    Cybersecurity, networking, Linux, backend development, badminton, anime, Formula 1.
+                  </p>
+                </div>
 
-                  <!-- My Approach -->
-                  <div class="p-2 rounded-xl bg-surface-container-low/50 border border-outline/20">
-                    <div class="flex items-center gap-1.5 mb-0.5 text-primary">
-                      <span class="material-symbols-outlined text-[13px]">psychology</span>
-                      <span class="font-display-hero text-[10.5px] sm:text-[11px] font-bold">My Approach</span>
-                    </div>
-                    <p class="text-[9.5px] sm:text-[10px] leading-relaxed text-secondary">
-                      Breaking complex problems into methodical steps, learning through experimentation, and disciplined documentation.
-                    </p>
+                <!-- My Approach -->
+                <div class="space-y-1.5">
+                  <div class="flex items-center gap-2 text-primary">
+                    <span class="material-symbols-outlined text-[17px] text-primary">track_changes</span>
+                    <span class="font-display-hero text-sm sm:text-[14.5px] font-bold">My Approach</span>
                   </div>
+                  <p class="text-[12.5px] sm:text-[13px] leading-relaxed text-secondary">
+                    Methodical learning, troubleshooting, attention to detail, and teamwork.
+                  </p>
+                </div>
 
-                  <!-- My Goals -->
-                  <div class="p-2 rounded-xl bg-surface-container-low/50 border border-outline/20">
-                    <div class="flex items-center gap-1.5 mb-0.5 text-primary">
-                      <span class="material-symbols-outlined text-[13px]">adjust</span>
-                      <span class="font-display-hero text-[10.5px] sm:text-[11px] font-bold">My Goals</span>
-                    </div>
-                    <p class="text-[9.5px] sm:text-[10px] leading-relaxed text-secondary">
-                      Become a competent Network &amp; Cyber Defense engineer, earn certifications (Security+, CCNA), and protect critical systems.
-                    </p>
+                <!-- My Goals -->
+                <div class="space-y-1.5">
+                  <div class="flex items-center gap-2 text-primary">
+                    <span class="material-symbols-outlined text-[17px] text-primary">military_tech</span>
+                    <span class="font-display-hero text-sm sm:text-[14.5px] font-bold">My Goals</span>
                   </div>
-
-                  <!-- Strengths -->
-                  <div class="p-2 rounded-xl bg-surface-container-low/50 border border-outline/20">
-                    <div class="flex items-center gap-1.5 mb-0.5 text-primary">
-                      <span class="material-symbols-outlined text-[13px]">auto_awesome</span>
-                      <span class="font-display-hero text-[10.5px] sm:text-[11px] font-bold">Strengths</span>
-                    </div>
-                    <p class="text-[9.5px] sm:text-[10px] leading-relaxed text-secondary">
-                      Analytical thinking, disciplined troubleshooting, attention to detail, adaptability, and continuous learning.
-                    </p>
-                  </div>
+                  <p class="text-[12.5px] sm:text-[13px] leading-relaxed text-secondary">
+                    Grow into a capable Network &amp; Security professional and contribute to real-world security projects.
+                  </p>
                 </div>
               </div>
             </div>
 
             <!-- ======================================================== -->
-            <!-- 4. Achievements (4 Compact Highlighted Cards)             -->
+            <!-- 4. Achievements & Milestones (Clean Chronological Rows)   -->
             <!-- ======================================================== -->
-            <div class="pt-2.5 sm:pt-3 mt-2.5 sm:mt-3 border-t border-surface-container/60">
-              <div class="flex items-center justify-between mb-1.5">
-                <span class="font-mono-code text-[9.5px] sm:text-[10px] uppercase tracking-[0.16em] text-secondary font-semibold">
-                  ACHIEVEMENTS
-                </span>
-                <button type="button" onclick="document.getElementById('milestones-modal').classList.remove('hidden'); document.getElementById('milestones-modal').classList.add('flex');" class="font-mono-code text-[9.5px] text-amber-400 hover:underline flex items-center gap-1 cursor-pointer">
-                  <span>[Evidence Scans ↗]</span>
+            <div class="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-surface-container/60">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-2 text-primary font-mono-code text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
+                  <span class="material-symbols-outlined text-[16px] text-amber-400">emoji_events</span>
+                  <span>ACHIEVEMENTS &amp; MILESTONES</span>
+                </div>
+                <button type="button" onclick="document.getElementById('milestones-modal').classList.remove('hidden'); document.getElementById('milestones-modal').classList.add('flex');" class="font-mono-code text-[10.5px] text-amber-400 hover:underline flex items-center gap-1 cursor-pointer">
+                  <span>[Inspect Certificates ↗]</span>
                 </button>
               </div>
 
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 text-left">
-                <!-- Achievement 1 -->
-                <div class="p-2 rounded-xl bg-surface-container-low/40 border border-outline/20 flex flex-col justify-between">
-                  <div>
-                    <div class="flex items-center justify-between mb-0.5">
-                      <span class="font-display-hero text-[10.5px] sm:text-[11px] font-bold text-primary">DSPC Bronze Award</span>
-                      <span class="font-mono-code text-[8.5px] text-secondary">2024</span>
-                    </div>
-                    <p class="font-mono-code text-[8.5px] text-amber-400/90 mb-0.5">Radio Broadcasting</p>
-                    <p class="text-[9.5px] leading-relaxed text-secondary">
-                      3rd Place in Radio Scriptwriting and Broadcasting (Filipino) at Division Schools Press Conference.
-                    </p>
-                  </div>
+              <div class="divide-y divide-surface-container/50 font-mono-code text-[12px] sm:text-[12.5px]">
+                <div class="flex items-baseline justify-between py-2.5 hover:bg-surface-container-low/40 px-2 rounded-lg transition-colors cursor-pointer" onclick="document.getElementById('milestones-modal').classList.remove('hidden'); document.getElementById('milestones-modal').classList.add('flex');">
+                  <span class="text-primary font-medium hover:text-amber-400 transition-colors">DSPC 3rd Place — Radio Scriptwriting &amp; Broadcasting</span>
+                  <span class="text-secondary text-[11.5px] shrink-0 ml-4">2024</span>
                 </div>
-
-                <!-- Achievement 2 -->
-                <div class="p-2 rounded-xl bg-surface-container-low/40 border border-outline/20 flex flex-col justify-between">
-                  <div>
-                    <div class="flex items-center justify-between mb-0.5">
-                      <span class="font-display-hero text-[10.5px] sm:text-[11px] font-bold text-primary">Academic Honors</span>
-                      <span class="font-mono-code text-[8.5px] text-secondary">2024–2025</span>
-                    </div>
-                    <p class="font-mono-code text-[8.5px] text-amber-400/90 mb-0.5">Senior High School</p>
-                    <p class="text-[9.5px] leading-relaxed text-secondary">
-                      Graduated Senior High School with High Scholastic Standing (With Honors, STEM Track).
-                    </p>
-                  </div>
+                <div class="flex items-baseline justify-between py-2.5 hover:bg-surface-container-low/40 px-2 rounded-lg transition-colors cursor-pointer" onclick="document.getElementById('milestones-modal').classList.remove('hidden'); document.getElementById('milestones-modal').classList.add('flex');">
+                  <span class="text-primary font-medium hover:text-amber-400 transition-colors">Academic Excellence — With Honors, Grade 11</span>
+                  <span class="text-secondary text-[11.5px] shrink-0 ml-4">2025</span>
                 </div>
-
-                <!-- Achievement 3 -->
-                <div class="p-2 rounded-xl bg-surface-container-low/40 border border-outline/20 flex flex-col justify-between">
-                  <div>
-                    <div class="flex items-center justify-between mb-0.5">
-                      <span class="font-display-hero text-[10.5px] sm:text-[11px] font-bold text-primary">PIXELS Leadership</span>
-                      <span class="font-mono-code text-[8.5px] text-secondary">2024–2026</span>
-                    </div>
-                    <p class="font-mono-code text-[8.5px] text-amber-400/90 mb-0.5">Multimedia Arts</p>
-                    <p class="text-[9.5px] leading-relaxed text-secondary">
-                      Served as President, Head of Photo Editing, and Event Chairperson for creative media.
-                    </p>
-                  </div>
+                <div class="flex items-baseline justify-between py-2.5 hover:bg-surface-container-low/40 px-2 rounded-lg transition-colors cursor-pointer" onclick="document.getElementById('milestones-modal').classList.remove('hidden'); document.getElementById('milestones-modal').classList.add('flex');">
+                  <span class="text-primary font-medium hover:text-amber-400 transition-colors">Academic Excellence — With Honors, Grade 12</span>
+                  <span class="text-secondary text-[11.5px] shrink-0 ml-4">2025</span>
                 </div>
-
-                <!-- Achievement 4 -->
-                <div class="p-2 rounded-xl bg-surface-container-low/40 border border-outline/20 flex flex-col justify-between">
-                  <div>
-                    <div class="flex items-center justify-between mb-0.5">
-                      <span class="font-display-hero text-[10.5px] sm:text-[11px] font-bold text-primary">RHU Immersion</span>
-                      <span class="font-mono-code text-[8.5px] text-secondary">2024</span>
-                    </div>
-                    <p class="font-mono-code text-[8.5px] text-amber-400/90 mb-0.5">Laboratory &amp; Systems</p>
-                    <p class="text-[9.5px] leading-relaxed text-secondary">
-                      Applied health informatics, patient records workflow immersion, and clinical documentation support.
-                    </p>
-                  </div>
+                <div class="flex items-baseline justify-between py-2.5 hover:bg-surface-container-low/40 px-2 rounded-lg transition-colors cursor-pointer" onclick="document.getElementById('milestones-modal').classList.remove('hidden'); document.getElementById('milestones-modal').classList.add('flex');">
+                  <span class="text-primary font-medium hover:text-amber-400 transition-colors">PIXELS Club — Head of Photo Editing</span>
+                  <span class="text-secondary text-[11.5px] shrink-0 ml-4">2024–2025</span>
+                </div>
+                <div class="flex items-baseline justify-between py-2.5 hover:bg-surface-container-low/40 px-2 rounded-lg transition-colors cursor-pointer" onclick="document.getElementById('milestones-modal').classList.remove('hidden'); document.getElementById('milestones-modal').classList.add('flex');">
+                  <span class="text-primary font-medium hover:text-amber-400 transition-colors">PIXELS Club — President &amp; Event Chairperson</span>
+                  <span class="text-secondary text-[11.5px] shrink-0 ml-4">2025–2026</span>
+                </div>
+                <div class="flex items-baseline justify-between py-2.5 hover:bg-surface-container-low/40 px-2 rounded-lg transition-colors cursor-pointer" onclick="document.getElementById('milestones-modal').classList.remove('hidden'); document.getElementById('milestones-modal').classList.add('flex');">
+                  <span class="text-primary font-medium hover:text-amber-400 transition-colors">Sinayon: The Golden Flame — PEN Value Integrity Awardee</span>
+                  <span class="text-secondary text-[11.5px] shrink-0 ml-4">2026</span>
+                </div>
+                <div class="flex items-baseline justify-between py-2.5 hover:bg-surface-container-low/40 px-2 rounded-lg transition-colors cursor-pointer" onclick="document.getElementById('milestones-modal').classList.remove('hidden'); document.getElementById('milestones-modal').classList.add('flex');">
+                  <span class="text-primary font-medium hover:text-amber-400 transition-colors">IMBC Badminton Tournament — Top Competitor Distinction</span>
+                  <span class="text-secondary text-[11.5px] shrink-0 ml-4">2025</span>
                 </div>
               </div>
             </div>
 
             <!-- ======================================================== -->
-            <!-- 5. Technologies & Skills (Small Consistent Skill Tags)   -->
+            <!-- 5. Technologies & Skills (Rounded Pill Badges)           -->
             <!-- ======================================================== -->
-            <div class="pt-2 mt-2 border-t border-surface-container/60">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1.5">
-                <span class="font-mono-code text-[9px] sm:text-[9.5px] uppercase tracking-[0.16em] text-secondary font-semibold">
-                  TECHNOLOGIES &amp; SKILLS
-                </span>
-                <span class="font-mono-code text-[8.5px] sm:text-[9px] text-secondary">
-                  UNIVERSITY OF THE CORDILLERAS • BSIT
-                </span>
+            <div class="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-surface-container/60">
+              <div class="flex items-center gap-2 mb-4 text-primary font-mono-code text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
+                <span class="material-symbols-outlined text-[16px] text-secondary">code</span>
+                <span>TECHNOLOGIES &amp; SKILLS</span>
               </div>
 
-              <div class="flex flex-wrap items-center gap-1 sm:gap-1.5">
-                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-outline/20 text-[9.5px] sm:text-[10px] font-mono-code text-primary">Networking</span>
-                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-outline/20 text-[9.5px] sm:text-[10px] font-mono-code text-primary">Linux / Bash</span>
-                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-outline/20 text-[9.5px] sm:text-[10px] font-mono-code text-primary">Cyber Defense</span>
-                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-outline/20 text-[9.5px] sm:text-[10px] font-mono-code text-primary">Python</span>
-                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-outline/20 text-[9.5px] sm:text-[10px] font-mono-code text-primary">Zero Trust</span>
-                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-outline/20 text-[9.5px] sm:text-[10px] font-mono-code text-primary">IAM &amp; Audit</span>
-                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-outline/20 text-[9.5px] sm:text-[10px] font-mono-code text-primary">Git &amp; GitHub</span>
-                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-outline/20 text-[9.5px] sm:text-[10px] font-mono-code text-primary">Wireshark</span>
-                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-outline/20 text-[9.5px] sm:text-[10px] font-mono-code text-primary">Packet Tracer</span>
+              <div class="flex flex-wrap items-center gap-2 sm:gap-2.5">
+                <span class="px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline/25 text-[11.5px] sm:text-xs font-mono-code text-primary shadow-xs">Linux</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline/25 text-[11.5px] sm:text-xs font-mono-code text-primary shadow-xs">Networking</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline/25 text-[11.5px] sm:text-xs font-mono-code text-primary shadow-xs">Python</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline/25 text-[11.5px] sm:text-xs font-mono-code text-primary shadow-xs">Node.js</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline/25 text-[11.5px] sm:text-xs font-mono-code text-primary shadow-xs">Wireshark</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline/25 text-[11.5px] sm:text-xs font-mono-code text-primary shadow-xs">Git</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline/25 text-[11.5px] sm:text-xs font-mono-code text-primary shadow-xs">Backend Development</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline/25 text-[11.5px] sm:text-xs font-mono-code text-primary shadow-xs">Cloud Security</span>
               </div>
             </div>
 
