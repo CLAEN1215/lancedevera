@@ -1360,58 +1360,165 @@
 <div id="deck-wrapper" class="deck-wrapper">
   <div class="deck-slide active" id="slide-0" data-slide="0" data-hash="home" data-title="HOME">
     <div class="deck-slide-inner deck-slide-inner--hero">
-      <section class="w-full select-none" id="home">
-        <div class="w-full max-w-[800px] mx-auto px-4 sm:px-6">
+      <section class="w-full select-none py-1 sm:py-2" id="home">
+        <div class="w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
           
-          <!-- Top Hero Group: Halftone Portrait + Typography & Bio closely coupled -->
-          <div class="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-5 sm:gap-7 lg:gap-8">
+          <!-- Master 1/3 + 2/3 Tech Hero Layout -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-8 items-center reveal-on-scroll">
             
-            <!-- Dithered Portrait (Lance's Real Photo - Frameless Bryl Lim Style) -->
-            <div class="shrink-0 flex items-center justify-center">
-              <div class="relative w-[135px] sm:w-[195px] md:w-[225px] flex items-center justify-center group">
-                <img id="halftone-pfp-img" src="lance-formal-portrait.png?v=4" alt="Lance De Vera" class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02] pointer-events-none select-none" style="border:none!important;background:transparent!important;box-shadow:none!important;outline:none!important;" />
+            <!-- LEFT COLUMN (1/3 Width = 4 Cols on Desktop): Prominent Tech HUD Portrait -->
+            <div class="lg:col-span-4 flex justify-center">
+              <div class="relative w-full max-w-[320px] sm:max-w-[340px] lg:max-w-none rounded-2xl bg-surface-container-lowest border border-outline/25 p-3.5 sm:p-4 shadow-xl overflow-hidden group">
+                
+                <!-- Tactical HUD Reticles -->
+                <div class="absolute top-2 left-2 text-[8.5px] font-mono-code text-primary/35 select-none pointer-events-none">┌ [SYS_ID: 24-0812]</div>
+                <div class="absolute top-2 right-2 text-[8.5px] font-mono-code text-primary/35 select-none pointer-events-none">[SEC_OPS] ┐</div>
+
+                <!-- Top Telemetry Status -->
+                <div class="flex items-center justify-between pb-2 mb-2 border-b border-surface-container/60 pt-1">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="font-mono-code text-[10px] text-emerald-500 font-semibold tracking-wider">OPERATOR // ONLINE</span>
+                  </div>
+                  <span class="font-mono-code text-[9.5px] text-secondary">CLEARANCE: L1</span>
+                </div>
+
+                <!-- Portrait Frame: One-Third Width Display -->
+                <div class="relative w-full aspect-[4/4.8] sm:aspect-[4/5] rounded-xl overflow-hidden bg-gradient-to-b from-surface-container-low/60 via-surface-container-lowest to-surface-container-lowest border border-outline/20 flex items-end justify-center">
+                  <!-- Radial cyber glow & subtle grid pattern -->
+                  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/15 via-transparent to-transparent pointer-events-none"></div>
+                  <div class="absolute inset-0 opacity-15 bg-[linear-gradient(to_right,#80808015_1px,transparent_1px),linear-gradient(to_bottom,#80808015_1px,transparent_1px)] bg-[size:16px_16px] pointer-events-none"></div>
+
+                  <!-- Lance Formal Suit Portrait -->
+                  <img src="lance-suit-portrait.png" alt="Lance De Vera" class="w-full h-full object-cover object-top filter contrast-[1.03] transition-transform duration-500 group-hover:scale-[1.02]" />
+
+                  <!-- Bottom Vignette -->
+                  <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent pointer-events-none"></div>
+
+                  <!-- Floating Glass Identity Plate -->
+                  <div class="absolute bottom-2 left-2 right-2 flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono-code text-white shadow-md">
+                    <div>
+                      <div class="font-bold text-[11px] leading-tight text-white tracking-wide">LANCE DE VERA</div>
+                      <div class="text-[9px] text-secondary tracking-normal">Security &amp; Systems Engineer</div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-semibold border border-emerald-500/30">
+                      BSIT • NETSEC
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Quick Status Readout -->
+                <div class="pt-2.5 mt-2 border-t border-surface-container/60 flex items-center justify-between text-[10px] font-mono-code text-secondary">
+                  <span>CITCS • UC BAGUIO</span>
+                  <span class="text-primary font-semibold">1st Year Enrolled</span>
+                </div>
+
               </div>
             </div>
 
-            <!-- Hero Typography, Bio, and Lowercase Socials with ↗ -->
-            <div class="flex flex-col justify-center text-center sm:text-left flex-1 min-w-0">
-              <div class="flex items-center justify-center sm:justify-start gap-2 mb-2 font-mono-code">
-                <span class="w-1.5 h-1.5 bg-primary"></span>
-                <span class="text-[9.5px] uppercase px-2 py-0.5 border border-primary/30 text-primary tracking-widest">[SYS_ID: LDEV-SEC // 2026]</span>
-              </div>
+            <!-- RIGHT COLUMN (2/3 Width = 8 Cols on Desktop): Tech Dossier, Achievements & Navigation -->
+            <div class="lg:col-span-8 flex flex-col justify-center text-left space-y-3 sm:space-y-3.5">
               
-              <h1 class="font-display-hero text-[34px] sm:text-[44px] lg:text-[48px] font-bold tracking-tight text-primary leading-[0.94] select-none">
-                Lance<br class="hidden sm:inline" /> De Vera
-              </h1>
-
-              <p class="font-headline-md text-[13px] sm:text-[14.5px] text-primary font-medium tracking-tight mt-2.5">
-                Engineering systems. Securing networks. Building the future.<span class="cli-cursor"></span>
-              </p>
-
-              <p class="font-body-lg text-[12px] sm:text-[12.5px] text-secondary leading-relaxed mt-2 max-w-[460px] opacity-85">
-                Specializing in defensive security, zero-trust architecture, and resilient cloud systems.
-              </p>
-
-              
-
-              <!-- Minimal Lowercase Social Links with Arrows ↗ -->
-              <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-5 mt-4 sm:mt-5 pt-0.5 font-mono-code text-[11.5px] sm:text-[12.5px] text-secondary">
-                <a href="https://github.com/CLAEN1215" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-1 group">
-                  <span>github</span> <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
-                </a>
-                <a href="https://www.linkedin.com/in/lance-de-vera" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-1 group">
-                  <span>linkedin</span> <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
-                </a>
-                <a href="https://www.facebook.com/lance.de.vera.658636/" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-1 group">
-                  <span>facebook</span> <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
-                </a>
-                <a href="mailto:dvlance112208@gmail.com" class="hover:text-primary transition-colors flex items-center gap-1 group">
-                  <span>email</span> <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
-                </a>
+              <!-- System Directive Chip & Status -->
+              <div class="flex flex-wrap items-center gap-2 font-mono-code text-[10.5px]">
+                <span class="px-2.5 py-0.5 rounded-full bg-primary/10 border border-primary/25 text-primary font-semibold flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                  [SYS_ID: LDEV-SEC // 2026]
+                </span>
+                <span class="text-secondary">•</span>
+                <span class="text-secondary">ZERO-TRUST ARCHITECTURE</span>
+                <span class="text-secondary hidden sm:inline">•</span>
+                <span class="text-emerald-500 font-semibold hidden sm:inline">DEFENSIVE SECURITY</span>
               </div>
+
+              <!-- Hero Headline -->
+              <div>
+                <h1 class="font-display-hero text-[32px] sm:text-[42px] lg:text-[48px] font-bold tracking-tight text-primary leading-[0.94] select-none">
+                  Lance De Vera
+                </h1>
+                <p class="font-headline-md text-[13.5px] sm:text-[15px] text-primary font-medium tracking-tight mt-1.5">
+                  Engineering systems. Securing networks. Building the future.<span class="cli-cursor"></span>
+                </p>
+                <p class="font-body-lg text-[11.5px] sm:text-[12.5px] text-secondary leading-relaxed mt-1.5 max-w-[620px]">
+                  Undergraduate in Information Technology majoring in Network and Security at the University of the Cordilleras. Focused on defensive cyber operations, Linux system administration, and zero-trust cloud infrastructure.
+                </p>
+              </div>
+
+              <!-- ACHIEVEMENTS & HONORS STRIP (Explicitly Requested) -->
+              <div class="p-3 sm:p-3.5 rounded-xl bg-surface-container-lowest border border-outline/25 shadow-sm space-y-2">
+                <div class="flex items-center justify-between border-b border-surface-container/50 pb-1.5">
+                  <div class="flex items-center gap-1.5">
+                    <span class="material-symbols-outlined text-[15px] text-amber-400">military_tech</span>
+                    <span class="font-mono-code text-[11px] font-bold text-primary uppercase tracking-wider">Verified Achievements &amp; Honors</span>
+                  </div>
+                  <button type="button" onclick="document.getElementById('milestones-modal').classList.remove('hidden'); document.getElementById('milestones-modal').classList.add('flex');" class="text-[10px] font-mono-code text-amber-400 hover:underline flex items-center gap-1 cursor-pointer">
+                    <span>[Inspect Official Certificates ↗]</span>
+                  </button>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 font-mono-code text-[10.5px]">
+                  <div class="p-2 rounded-lg bg-surface-container-low/50 border border-outline/15">
+                    <div class="flex items-center gap-1 text-amber-400 font-bold mb-0.5">
+                      <span>★</span>
+                      <span class="text-primary font-semibold text-[11px] truncate">PEN Integrity Award</span>
+                    </div>
+                    <p class="text-[9.5px] text-secondary leading-tight truncate">Leadership Distinction • UPang</p>
+                  </div>
+
+                  <div class="p-2 rounded-lg bg-surface-container-low/50 border border-outline/15">
+                    <div class="flex items-center gap-1 text-amber-400 font-bold mb-0.5">
+                      <span>★</span>
+                      <span class="text-primary font-semibold text-[11px] truncate">Academic Excellence</span>
+                    </div>
+                    <p class="text-[9.5px] text-secondary leading-tight truncate">With Honors (Grades 11 &amp; 12)</p>
+                  </div>
+
+                  <div class="p-2 rounded-lg bg-surface-container-low/50 border border-outline/15">
+                    <div class="flex items-center gap-1 text-amber-400 font-bold mb-0.5">
+                      <span>★</span>
+                      <span class="text-primary font-semibold text-[11px] truncate">Exemplary Chairmanship</span>
+                    </div>
+                    <p class="text-[9.5px] text-secondary leading-tight truncate">PIXELS Arts &amp; Media Club</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Focus Badges + CTAs + Social Links -->
+              <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+                <!-- Action CTA Buttons -->
+                <div class="flex items-center gap-2.5">
+                  <button type="button" onclick="window.DeckController.goToSlide(1)" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-primary text-on-primary font-mono-code text-[11px] font-semibold hover:opacity-90 transition-opacity shadow-sm cursor-pointer">
+                    <span>Explore About Me</span>
+                    <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                  </button>
+                  <button type="button" onclick="document.getElementById('milestones-modal').classList.remove('hidden'); document.getElementById('milestones-modal').classList.add('flex');" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-low border border-outline/30 hover:border-amber-400/50 text-amber-400 font-mono-code text-[11px] transition-colors shadow-sm cursor-pointer">
+                    <span class="material-symbols-outlined text-[14px]">military_tech</span>
+                    <span>Certificates</span>
+                  </button>
+                </div>
+
+                <!-- Lowercase Social Links with ↗ -->
+                <div class="flex items-center gap-3.5 font-mono-code text-[11.5px] text-secondary">
+                  <a href="https://github.com/CLAEN1215" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-1 group">
+                    <span>github</span> <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/lance-de-vera" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-1 group">
+                    <span>linkedin</span> <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                  </a>
+                  <a href="mailto:dvlance112208@gmail.com" class="hover:text-primary transition-colors flex items-center gap-1 group">
+                    <span>email</span> <span class="text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                  </a>
+                </div>
+              </div>
+
             </div>
 
           </div>
+
+        </div>
+      </section>
+    </div>
+  </div>
 
 </div>
 
