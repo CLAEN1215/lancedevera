@@ -1376,8 +1376,7 @@
         <a href="#home" class="relative group nav-link font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-1 transition-colors whitespace-nowrap">
           Home<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <a href="#about" class="relative group nav-link font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-1 transition-colors whitespace-nowrap">
-          About Me<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+        <a href="#about" class="relative group nav-link font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-1 transition-colors whitespace-nowrap">Personal Information<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
         </a>
         <a href="#timeline" class="relative group nav-link font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-1 transition-colors whitespace-nowrap">
           Timeline<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
@@ -1433,7 +1432,7 @@
     <div id="mobile-menu" class="hidden xl:hidden w-full bg-surface-container-lowest border-b border-surface-container px-gutter-mobile py-lg transition-colors duration-300">
       <nav class="flex flex-col space-y-md">
         <a href="#home" class="mobile-nav-link font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface">Home</a>
-        <a href="#about" class="mobile-nav-link font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface">About Me</a>
+        <a href="#about" class="mobile-nav-link font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface">Personal Information</a>
         <a href="#timeline" class="mobile-nav-link font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface">Timeline</a>
         <a href="#work-and-skills" class="mobile-nav-link font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface">Experience &amp; Skills</a>
         <a href="#projects" class="mobile-nav-link font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface">Projects</a>
@@ -1509,14 +1508,14 @@
       </section>
     </div>
   </div>
-  <div class="deck-slide" id="slide-1" data-slide="1" data-hash="about" data-title="ABOUT ME">
+  <div class="deck-slide" id="slide-1" data-slide="1" data-hash="about" data-title="PERSONAL INFORMATION">
     <div class="deck-slide-inner deck-slide-inner--hero h-full flex flex-col justify-center">
       <section class="w-full h-full flex flex-col justify-center select-none overflow-y-auto lg:overflow-hidden px-4 sm:px-6 lg:px-8 py-2" id="about">
         <div class="w-full max-w-[1040px] mx-auto my-auto text-left">
           
           <!-- Top Section Label with Minimal Divider -->
-          <div class="flex items-center justify-between pb-2 mb-3 sm:mb-3.5 border-b border-surface-container/50 dark:border-white/[0.07]">
-            <span class="font-mono-code text-[10px] sm:text-[10.5px] font-bold text-primary tracking-widest uppercase">ABOUT / 01</span>
+          <div class="flex items-center justify-between pb-2 mb-2.5 sm:mb-3 border-b border-surface-container/50 dark:border-white/[0.07]">
+            <span class="font-mono-code text-[10px] sm:text-[10.5px] font-bold text-primary tracking-widest uppercase">PERSONAL INFORMATION / 01</span>
             <span class="font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-widest uppercase">WHO I AM</span>
           </div>
 
@@ -1528,72 +1527,102 @@
             <!-- ====================================================== -->
             <!-- LEFT COLUMN (5 cols / ~42%): Story, Details & Skills   -->
             <!-- ====================================================== -->
-            <div class="lg:col-span-5 flex flex-col space-y-3 sm:space-y-3.5 lg:pr-8 xl:pr-10 lg:border-r border-surface-container/50 dark:border-white/[0.07] border-b lg:border-b-0 pb-5 lg:pb-0">
+            <div class="lg:col-span-5 flex flex-col space-y-2.5 sm:space-y-3 lg:pr-8 xl:pr-10 lg:border-r border-surface-container/50 dark:border-white/[0.07] border-b lg:border-b-0 pb-5 lg:pb-0">
               
               <!-- Section 1: Headline & Bio -->
               <div>
-                <h2 class="font-display-hero text-xl sm:text-2xl lg:text-[26px] font-bold tracking-tight text-primary leading-[1.15] mb-1.5">
+                <h2 class="font-display-hero text-xl sm:text-2xl lg:text-[25px] font-bold tracking-tight text-primary leading-[1.15] mb-1">
                   Getting to know me.
                 </h2>
-                <p class="text-[11px] sm:text-[11.5px] leading-relaxed text-secondary max-w-[430px]">
+                <p class="text-[10.5px] sm:text-[11px] leading-relaxed text-secondary max-w-[430px]">
                   I'm Lance De Vera, a first-year BSIT student at the University of the Cordilleras, specializing in Network &amp; Security. I'm interested in understanding how systems work and building secure, reliable digital solutions.
                 </p>
               </div>
 
-              <!-- Section 2: Personal Details (Separated with Minimal Line) -->
-              <div class="pt-3 border-t border-surface-container/50 dark:border-white/[0.07]">
-                <div class="flex items-center gap-1.5 mb-1.5 text-primary font-mono-code text-[9.5px] sm:text-[10px] font-semibold uppercase tracking-wider">
-                  <span class="material-symbols-outlined text-[13px] text-secondary">person</span>
-                  <span>PERSONAL DETAILS</span>
+              <!-- Section 2: Personal Information (14 Required Rubric Fields) -->
+              <div class="pt-2.5 border-t border-surface-container/50 dark:border-white/[0.07]">
+                <div class="flex items-center gap-1.5 mb-1 text-primary font-mono-code text-[9px] sm:text-[9.5px] font-semibold uppercase tracking-wider">
+                  <span class="material-symbols-outlined text-[13px] text-secondary">badge</span>
+                  <span>PERSONAL INFORMATION</span>
                 </div>
                 
-                <div class="space-y-0.5 font-mono-code text-[10.5px] sm:text-[11px]">
+                <div class="space-y-[1.5px] font-mono-code text-[10px] sm:text-[10.5px] leading-tight">
                   <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
-                    <span class="text-secondary">Full name</span>
+                    <span class="text-secondary uppercase">NAME</span>
                     <span class="text-secondary/40">:</span>
                     <span class="text-primary font-medium">Lance De Vera</span>
                   </div>
                   <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
-                    <span class="text-secondary">Nickname</span>
+                    <span class="text-secondary uppercase">GENDER</span>
                     <span class="text-secondary/40">:</span>
-                    <span class="text-primary font-medium">Lance</span>
+                    <span class="text-primary font-medium">Male</span>
                   </div>
                   <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
-                    <span class="text-secondary">Age</span>
+                    <span class="text-secondary uppercase">STATUS</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">Single</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">AGE</span>
                     <span class="text-secondary/40">:</span>
                     <span class="text-primary font-medium">18</span>
                   </div>
                   <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
-                    <span class="text-secondary">Residence</span>
+                    <span class="text-secondary uppercase">BIRTHDAY</span>
                     <span class="text-secondary/40">:</span>
-                    <span class="text-primary font-medium">Baguio City, PH</span>
+                    <span class="text-primary font-medium">November 22, 2007</span>
                   </div>
                   <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
-                    <span class="text-secondary">School</span>
+                    <span class="text-secondary uppercase">PROGRAM</span>
                     <span class="text-secondary/40">:</span>
-                    <span class="text-primary font-medium">Univ. of the Cordilleras</span>
+                    <span class="text-primary font-medium">BS Information Technology</span>
                   </div>
                   <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
-                    <span class="text-secondary">Program</span>
+                    <span class="text-secondary uppercase">COLLEGE</span>
                     <span class="text-secondary/40">:</span>
-                    <span class="text-primary font-medium">BS Information Tech</span>
+                    <span class="text-primary font-medium">CITCS</span>
                   </div>
                   <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
-                    <span class="text-secondary">Specialization</span>
+                    <span class="text-secondary uppercase">YEAR LEVEL</span>
                     <span class="text-secondary/40">:</span>
-                    <span class="text-primary font-medium">Network &amp; Security</span>
+                    <span class="text-primary font-medium">1st Year (CITCS - 1F - GROUP B)</span>
                   </div>
                   <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
-                    <span class="text-secondary">Section</span>
+                    <span class="text-secondary uppercase">SCHOOL</span>
                     <span class="text-secondary/40">:</span>
-                    <span class="text-primary font-medium">CITCS - 1F - GROUP B</span>
+                    <span class="text-primary font-medium">University of the Cordilleras</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">HOBBIES</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">Badminton, Anime, Formula 1</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">SKILLS</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">Network Security, Linux</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">ADDRESS</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium truncate">Pias, Mapandan, Pangasinan</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">EMAIL</span>
+                    <span class="text-secondary/40">:</span>
+                    <a href="mailto:dvlance112208@gmail.com" class="text-primary font-medium hover:text-amber-400 transition-colors truncate">dvlance112208@gmail.com</a>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">PHONE NUMBER</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">09950244311</span>
                   </div>
                 </div>
               </div>
 
               <!-- Section 3: Technologies & Skills (Separated with Minimal Line) -->
-              <div class="pt-3 border-t border-surface-container/50 dark:border-white/[0.07]">
-                <div class="flex items-center gap-1.5 mb-1.5 text-primary font-mono-code text-[9.5px] sm:text-[10px] font-semibold uppercase tracking-wider">
+              <div class="pt-2.5 border-t border-surface-container/50 dark:border-white/[0.07]">
+                <div class="flex items-center gap-1.5 mb-1 text-primary font-mono-code text-[9px] sm:text-[9.5px] font-semibold uppercase tracking-wider">
                   <span class="material-symbols-outlined text-[13px] text-secondary">code</span>
                   <span>TECHNOLOGIES &amp; SKILLS</span>
                 </div>
@@ -5098,7 +5127,7 @@
     <!-- Six Clickable Progress Dots [ ● ● ○ ○ ○ ○ ] -->
     <div id="island-dots" class="island-dots-container">
       <button class="island-dot active" data-target="0" title="01 HOME" aria-label="01 HOME"></button>
-      <button class="island-dot" data-target="1" title="02 ABOUT ME" aria-label="02 ABOUT ME"></button>
+      <button class="island-dot" data-target="1" title="02 PERSONAL INFORMATION" aria-label="02 PERSONAL INFORMATION"></button>
       <button class="island-dot" data-target="2" title="03 TIMELINE" aria-label="03 TIMELINE"></button>
       <button class="island-dot" data-target="3" title="04 EXPERIENCE &amp; SKILLS" aria-label="04 EXPERIENCE &amp; SKILLS"></button>
       <button class="island-dot" data-target="4" title="05 PROJECTS" aria-label="05 PROJECTS"></button>
@@ -5119,7 +5148,7 @@
 (function() {
   const SECTIONS = [
     { hash: 'home', num: '01', title: 'HOME' },
-    { hash: 'about', num: '02', title: 'ABOUT ME' },
+    { hash: 'about', num: '02', title: 'PERSONAL INFORMATION' },
     { hash: 'timeline', num: '03', title: 'TIMELINE' },
     { hash: 'work-and-skills', num: '04', title: 'EXPERIENCE & SKILLS' },
     { hash: 'projects', num: '05', title: 'PROJECTS' },
