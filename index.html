@@ -1510,124 +1510,205 @@
   </div>
   <div class="deck-slide" id="slide-1" data-slide="1" data-hash="about" data-title="PERSONAL INFORMATION">
     <div class="deck-slide-inner deck-slide-inner--hero h-full flex flex-col justify-center">
-      <section class="w-full h-full flex flex-col justify-center select-none overflow-y-auto lg:overflow-hidden px-4 sm:px-6 lg:px-8 py-4 sm:py-6" id="about">
-        <div class="w-full max-w-[980px] mx-auto my-auto text-left">
+      <section class="w-full h-full flex flex-col justify-center select-none overflow-y-auto lg:overflow-hidden px-4 sm:px-6 lg:px-8 py-3 sm:py-5" id="about">
+        <div class="w-full max-w-[1020px] mx-auto my-auto text-left">
           
           <!-- Top Section Label with Minimal Divider -->
-          <div class="flex items-center justify-between pb-2 mb-4 sm:mb-6 border-b border-surface-container/50 dark:border-white/[0.07]">
-            <span class="font-mono-code text-[10px] sm:text-[10.5px] font-bold text-primary tracking-widest uppercase">PERSONAL INFORMATION / 01</span>
+          <div class="flex items-center justify-between pb-2 mb-3 sm:mb-4 border-b border-surface-container/50 dark:border-white/[0.07]">
+            <div class="flex items-center gap-2">
+              <span class="font-mono-code text-[10px] sm:text-[10.5px] font-bold text-primary tracking-widest uppercase">PERSONAL INFORMATION / 01</span>
+              <span class="text-secondary/40 text-xs">•</span>
+              <span class="font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-wider uppercase">PROFILE DOSSIER</span>
+            </div>
             <span class="font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-widest uppercase">WHO I AM</span>
           </div>
 
-          <!-- Section Heading -->
-          <div class="mb-4 sm:mb-6">
-            <h2 class="font-display-hero text-xl sm:text-2xl lg:text-[26px] font-bold tracking-tight text-primary leading-tight">
-              Personal Information
-            </h2>
-          </div>
-
           <!-- ======================================================== -->
-          <!-- 14 Required Fields: Symmetrical 50/50 Editorial Split    -->
-          <!-- Subtle Vertical Divider Line Down the Center            -->
+          <!-- 4-Card Modular Layout (Strictly 14 Required Fields)      -->
           <!-- ======================================================== -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-0 items-stretch">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 items-stretch">
             
             <!-- ====================================================== -->
-            <!-- LEFT COLUMN (Fields 1 to 7)                            -->
+            <!-- CARD 1: Upper Left — Profile & Contact Details          -->
+            <!-- (Address, Email, Phone Number)                         -->
             <!-- ====================================================== -->
-            <div class="space-y-2 sm:space-y-2.5 font-mono-code text-[11px] sm:text-[11.5px] lg:pr-8 xl:pr-10 lg:border-r border-surface-container/50 dark:border-white/[0.07] border-b lg:border-b-0 pb-5 lg:pb-0">
-              
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">NAME</span>
-                <span class="text-secondary/40">:</span>
-                <span class="text-primary font-medium">Lance De Vera</span>
+            <div class="rounded-2xl border border-surface-container/60 dark:border-white/[0.07] bg-surface-container-lowest/90 dark:bg-white/[0.025] p-3.5 sm:p-4.5 flex flex-col justify-between shadow-sm hover:border-outline/40 transition-all duration-300">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-1.5 text-primary font-mono-code text-[9px] sm:text-[9.5px] font-semibold uppercase tracking-wider">
+                    <span class="material-symbols-outlined text-[13px] text-secondary">contact_mail</span>
+                    <span>CONTACT &amp; RESIDENCE</span>
+                  </div>
+                  <span class="text-[9px] font-mono-code text-outline uppercase">PROFILE</span>
+                </div>
+
+                <div class="flex items-center gap-3 sm:gap-3.5 mb-2.5">
+                  <img src="assets/images/lance-about-portrait.jpg" 
+                       alt="Lance De Vera" 
+                       class="w-14 h-16 sm:w-16 sm:h-[76px] rounded-xl object-cover border border-white/10 shadow-sm shrink-0">
+                  <div class="min-w-0">
+                    <h3 class="font-display-hero text-base sm:text-lg font-bold text-primary tracking-tight leading-tight truncate">
+                      Lance De Vera
+                    </h3>
+                    <p class="text-[10px] sm:text-[10.5px] text-secondary mt-0.5 truncate">
+                      BS Information Technology
+                    </p>
+                    <span class="inline-block mt-1 px-1.5 py-0.5 rounded bg-surface-container-low text-[9px] font-mono-code text-primary font-medium">
+                      Network &amp; Security
+                    </span>
+                  </div>
+                </div>
               </div>
 
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">GENDER</span>
-                <span class="text-secondary/40">:</span>
-                <span class="text-primary font-medium">Male</span>
+              <!-- Address, Email, Phone Number -->
+              <div class="pt-2 border-t border-surface-container/50 dark:border-white/[0.05] space-y-1 font-mono-code text-[10px] sm:text-[10.5px]">
+                <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                  <span class="text-secondary uppercase">ADDRESS</span>
+                  <span class="text-secondary/40">:</span>
+                  <span class="text-primary font-medium truncate">Pias, Mapandan, Pangasinan</span>
+                </div>
+                <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                  <span class="text-secondary uppercase">EMAIL</span>
+                  <span class="text-secondary/40">:</span>
+                  <a href="mailto:dvlance112208@gmail.com" class="text-primary font-medium hover:text-amber-400 transition-colors truncate">dvlance112208@gmail.com</a>
+                </div>
+                <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                  <span class="text-secondary uppercase">PHONE NUMBER</span>
+                  <span class="text-secondary/40">:</span>
+                  <a href="tel:09950244311" class="text-primary font-medium hover:text-amber-400 transition-colors">09950244311</a>
+                </div>
               </div>
-
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">STATUS</span>
-                <span class="text-secondary/40">:</span>
-                <span class="text-primary font-medium">Single</span>
-              </div>
-
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">AGE</span>
-                <span class="text-secondary/40">:</span>
-                <span class="text-primary font-medium">18</span>
-              </div>
-
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">BIRTHDAY</span>
-                <span class="text-secondary/40">:</span>
-                <span class="text-primary font-medium">November 22, 2007</span>
-              </div>
-
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">PROGRAM</span>
-                <span class="text-secondary/40">:</span>
-                <span class="text-primary font-medium">BS Information Technology</span>
-              </div>
-
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">COLLEGE</span>
-                <span class="text-secondary/40">:</span>
-                <span class="text-primary font-medium">CITCS</span>
-              </div>
-
             </div>
 
             <!-- ====================================================== -->
-            <!-- RIGHT COLUMN (Fields 8 to 14)                          -->
+            <!-- CARD 2: Upper Right — Personal Identity                 -->
+            <!-- (Name, Gender, Status, Age, Birthday)                  -->
             <!-- ====================================================== -->
-            <div class="space-y-2 sm:space-y-2.5 font-mono-code text-[11px] sm:text-[11.5px] lg:pl-8 xl:pl-10">
-              
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">YEAR LEVEL</span>
-                <span class="text-secondary/40">:</span>
-                <span class="text-primary font-medium">1st Year (CITCS - 1F - GROUP B)</span>
+            <div class="rounded-2xl border border-surface-container/60 dark:border-white/[0.07] bg-surface-container-lowest/90 dark:bg-white/[0.025] p-3.5 sm:p-4.5 flex flex-col justify-between shadow-sm hover:border-outline/40 transition-all duration-300">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-1.5 text-primary font-mono-code text-[9px] sm:text-[9.5px] font-semibold uppercase tracking-wider">
+                    <span class="material-symbols-outlined text-[13px] text-secondary">badge</span>
+                    <span>PERSONAL IDENTITY</span>
+                  </div>
+                  <span class="text-[9px] font-mono-code text-outline uppercase">DETAILS</span>
+                </div>
+
+                <div class="space-y-1 font-mono-code text-[10.5px] sm:text-[11px] pt-0.5">
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">NAME</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-semibold">Lance De Vera</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">GENDER</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">Male</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">STATUS</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">Single</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">AGE</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">18</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">BIRTHDAY</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">November 22, 2007</span>
+                  </div>
+                </div>
               </div>
 
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">SCHOOL</span>
-                <span class="text-secondary/40">:</span>
-                <span class="text-primary font-medium">University of the Cordilleras</span>
+              <div class="pt-2 border-t border-surface-container/50 dark:border-white/[0.05] flex items-center justify-between text-[9px] font-mono-code text-secondary">
+                <span>IDENTITY DOSSIER</span>
+                <span class="text-emerald-400 font-medium">18 YRS OLD</span>
+              </div>
+            </div>
+
+            <!-- ====================================================== -->
+            <!-- CARD 3: Lower Left — Hobbies & Skills                   -->
+            <!-- (Hobbies, Skills)                                      -->
+            <!-- ====================================================== -->
+            <div class="rounded-2xl border border-surface-container/60 dark:border-white/[0.07] bg-surface-container-lowest/90 dark:bg-white/[0.025] p-3.5 sm:p-4.5 flex flex-col justify-between shadow-sm hover:border-outline/40 transition-all duration-300">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-1.5 text-primary font-mono-code text-[9px] sm:text-[9.5px] font-semibold uppercase tracking-wider">
+                    <span class="material-symbols-outlined text-[13px] text-secondary">sports_esports</span>
+                    <span>HOBBIES &amp; SKILLS</span>
+                  </div>
+                  <span class="text-[9px] font-mono-code text-outline uppercase">INTERESTS</span>
+                </div>
+
+                <div class="space-y-1 font-mono-code text-[10.5px] sm:text-[11px] pt-0.5">
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">HOBBIES</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">Badminton, Anime, Formula 1</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">SKILLS</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">Network Security, Linux Administration</span>
+                  </div>
+                </div>
               </div>
 
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">HOBBIES</span>
-                <span class="text-secondary/40">:</span>
-                <span class="text-primary font-medium">Badminton, Anime, Formula 1</span>
+              <!-- Skill & Hobby Pills for Visual Polish -->
+              <div class="pt-2 border-t border-surface-container/50 dark:border-white/[0.05] flex flex-wrap items-center gap-1.5">
+                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-surface-container/50 text-[9px] font-mono-code text-secondary">Badminton</span>
+                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-surface-container/50 text-[9px] font-mono-code text-secondary">Anime</span>
+                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-surface-container/50 text-[9px] font-mono-code text-secondary">Formula 1</span>
+                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-surface-container/50 text-[9px] font-mono-code text-primary font-medium">Network Security</span>
+                <span class="px-2 py-0.5 rounded-md bg-surface-container-low border border-surface-container/50 text-[9px] font-mono-code text-primary font-medium">Linux Administration</span>
+              </div>
+            </div>
+
+            <!-- ====================================================== -->
+            <!-- CARD 4: Lower Right — Academic Background               -->
+            <!-- (Program, College, Year Level, School)                 -->
+            <!-- ====================================================== -->
+            <div class="rounded-2xl border border-surface-container/60 dark:border-white/[0.07] bg-surface-container-lowest/90 dark:bg-white/[0.025] p-3.5 sm:p-4.5 flex flex-col justify-between shadow-sm hover:border-outline/40 transition-all duration-300">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-1.5 text-primary font-mono-code text-[9px] sm:text-[9.5px] font-semibold uppercase tracking-wider">
+                    <span class="material-symbols-outlined text-[13px] text-secondary">school</span>
+                    <span>ACADEMIC BACKGROUND</span>
+                  </div>
+                  <span class="text-[9px] font-mono-code text-outline uppercase">EDUCATION</span>
+                </div>
+
+                <div class="space-y-1 font-mono-code text-[10.5px] sm:text-[11px] pt-0.5">
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">PROGRAM</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">BS Information Technology</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">COLLEGE</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">CITCS</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">YEAR LEVEL</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">1st Year (CITCS - 1F - GROUP B)</span>
+                  </div>
+                  <div class="grid grid-cols-[105px_10px_1fr] items-baseline">
+                    <span class="text-secondary uppercase">SCHOOL</span>
+                    <span class="text-secondary/40">:</span>
+                    <span class="text-primary font-medium">University of the Cordilleras</span>
+                  </div>
+                </div>
               </div>
 
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">SKILLS</span>
-                <span class="text-secondary/40">:</span>
-                <span class="text-primary font-medium">Network Security, Linux</span>
+              <div class="pt-2 border-t border-surface-container/50 dark:border-white/[0.05] flex items-center justify-between text-[9px] font-mono-code text-secondary">
+                <span>CAMPUS: BAGUIO CITY</span>
+                <span>CITCS - 1F - GROUP B</span>
               </div>
-
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">ADDRESS</span>
-                <span class="text-secondary/40">:</span>
-                <span class="text-primary font-medium">Pias, Mapandan, Pangasinan</span>
-              </div>
-
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">EMAIL</span>
-                <span class="text-secondary/40">:</span>
-                <a href="mailto:dvlance112208@gmail.com" class="text-primary font-medium hover:text-amber-400 transition-colors truncate">dvlance112208@gmail.com</a>
-              </div>
-
-              <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
-                <span class="text-secondary uppercase">PHONE NUMBER</span>
-                <span class="text-secondary/40">:</span>
-                <a href="tel:09950244311" class="text-primary font-medium hover:text-amber-400 transition-colors">09950244311</a>
-              </div>
-
             </div>
 
           </div>
