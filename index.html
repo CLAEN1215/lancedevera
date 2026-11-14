@@ -321,6 +321,31 @@
       }
     }
 
+      /* Continuous Proof Marquee Animation (Page 3) */
+    @keyframes proofMarquee {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+    .proof-marquee-track {
+      display: flex;
+      width: max-content;
+      animation: proofMarquee 42s linear infinite;
+      will-change: transform;
+    }
+    .proof-marquee-container:hover .proof-marquee-track {
+      animation-play-state: paused;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .proof-marquee-track {
+        animation: none !important;
+        overflow-x: auto;
+      }
+    }
+
   </style>
 
   <!-- Motion One - Vanilla Framer Motion -->
@@ -1669,342 +1694,775 @@
       </section>
     </div>
   </div>
-  <div class="deck-slide" id="slide-2" data-slide="2" data-hash="timeline" data-title="ACHIEVEMENTS">
+      <div class="deck-slide" id="slide-2" data-slide="2" data-hash="timeline" data-title="EDUCATION">
     <div class="deck-slide-inner deck-slide-inner--hero h-full flex flex-col justify-center">
       <section class="w-full h-full flex flex-col justify-center select-none overflow-y-auto lg:overflow-hidden px-4 sm:px-6 lg:px-8 py-2" id="timeline">
-        <div class="w-full max-w-[1060px] mx-auto my-auto text-left">
+        <div class="w-full max-w-[1080px] mx-auto my-auto text-left">
           
           <!-- Top Section Label with Minimal Divider -->
-          <div class="flex items-center justify-between pb-2 mb-3 sm:mb-3.5 border-b border-surface-container/50 dark:border-white/[0.07]">
+          <div class="flex items-center justify-between pb-1.5 mb-2.5 sm:mb-3 border-b border-surface-container/50 dark:border-white/[0.07]">
             <div class="flex items-center gap-2">
-              <span class="font-mono-code text-[10px] sm:text-[10.5px] font-bold text-primary tracking-widest uppercase">ACHIEVEMENTS / 02</span>
+              <span class="font-mono-code text-[10px] sm:text-[10.5px] font-bold text-primary tracking-widest uppercase">EDUCATION // 03</span>
               <span class="text-secondary/40 text-xs">•</span>
-              <span class="font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-wider uppercase">HONORS &amp; DISTINCTIONS</span>
+              <span class="font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-wider uppercase">ACADEMIC PATHWAY &amp; CREDENTIAL AUDIT</span>
             </div>
-            <span class="font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-widest uppercase">12 VERIFIED RECORDS</span>
+            <span class="font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-widest uppercase">4 STAGES • 12 VERIFIED PROOFS</span>
           </div>
 
           <!-- Section Heading -->
           <div>
-            <h2 class="font-display-hero text-xl sm:text-2xl lg:text-[26px] font-bold tracking-tight text-primary leading-[1.15] mb-2 sm:mb-2.5">
-              Honors &amp; Milestones
+            <h2 class="font-display-hero text-xl sm:text-2xl lg:text-[25px] font-bold tracking-tight text-primary leading-[1.15] mb-2 sm:mb-2.5">
+              Educational Background &amp; Verified Distinctions
             </h2>
           </div>
 
           <!-- ======================================================== -->
-          <!-- 100% Static 3-Column Symmetrical Layout (Zero Scroll)     -->
-          <!-- Subtle Vertical Dividers Between Columns                 -->
+          <!-- CONCEPT A: 4-COLUMN SYMMETRICAL EDUCATIONAL GRID          -->
+          <!-- Elementary, Junior High, Senior High, 1st Year (College)  -->
           <!-- ======================================================== -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-0 items-start pt-1">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3 items-stretch">
             
-            <!-- ====================================================== -->
-            <!-- COLUMN 1: ACADEMIC AWARDS                              -->
-            <!-- ====================================================== -->
-            <div class="flex flex-col space-y-1.5 md:pr-6 xl:pr-8 md:border-r border-surface-container/50 dark:border-white/[0.07] border-b md:border-b-0 pb-4 md:pb-0">
-              <div class="flex items-center gap-1.5 mb-1 text-primary font-mono-code text-[9.5px] sm:text-[10px] font-semibold uppercase tracking-wider">
-                <span class="material-symbols-outlined text-[13px] text-amber-400">school</span>
-                <span>ACADEMIC AWARDS</span>
-              </div>
-
-              <!-- Item 1: Grade 12 Honors -->
-              <div class="group flex items-start justify-between py-1.5 px-2 -mx-2 rounded hover:bg-surface-container-low/50 dark:hover:bg-white/[0.03] transition-colors cursor-pointer"
-                   onclick="openEvidenceModal(this)"
-                   data-evidence-title="Academic Excellence — With Honors (Grade 12)"
-                   data-evidence-meta="Senior High School Academic Distinction"
-                   data-evidence-year="2025"
-                   data-evidence-desc="Awarded With Honors distinction for outstanding academic performance during Grade 12 Senior High School."
-                   data-evidence-src="assets/images/proofs/cert-academic-honors-gr12.jpg">
-                <div class="min-w-0 pr-2">
-                  <div class="text-[11px] font-medium text-primary group-hover:text-amber-400 transition-colors truncate">
-                    With Honors (Grade 12)
+            <!-- 01: ELEMENTARY -->
+            <div class="group flex flex-col justify-between p-2.5 sm:p-3 rounded-lg border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest/60 dark:bg-white/[0.02] hover:border-surface-container-high dark:hover:border-white/20 transition-all duration-200">
+              <div>
+                <div class="flex items-center justify-between mb-1.5 font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-wider">
+                  <div class="flex items-center gap-1.5 font-semibold text-primary">
+                    <span class="material-symbols-outlined text-[13px] text-amber-400">school</span>
+                    <span>01 // PRIMARY</span>
                   </div>
-                  <div class="text-[9.5px] font-mono-code text-secondary truncate">
-                    Senior High Distinction
-                  </div>
+                  <span class="text-[8.5px] text-secondary/70">2012–2018</span>
                 </div>
-                <div class="flex items-center gap-1 shrink-0 font-mono-code text-[9.5px] text-secondary pt-0.5">
-                  <span>2025</span>
-                  <span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                <div class="flex items-center gap-2.5 mb-2">
+                  <div class="w-9 h-9 rounded-md border border-surface-container/60 dark:border-white/10 p-0.5 bg-surface-container-low dark:bg-white/[0.06] flex items-center justify-center shrink-0">
+                    <img src="assets/images/schools/logos/hfps-seal-opt.png" alt="Holy Family Parochial School Seal" class="w-full h-full object-contain">
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <h3 class="text-[11px] sm:text-[11.5px] font-bold text-primary leading-tight truncate" title="Holy Family Parochial School">Holy Family Parochial School</h3>
+                    <div class="text-[8.5px] sm:text-[9px] font-mono-code text-secondary truncate">Kapitolyo, Pasig City</div>
+                  </div>
                 </div>
               </div>
-
-              <!-- Item 2: Grade 11 Honors -->
-              <div class="group flex items-start justify-between py-1.5 px-2 -mx-2 rounded hover:bg-surface-container-low/50 dark:hover:bg-white/[0.03] transition-colors cursor-pointer"
-                   onclick="openEvidenceModal(this)"
-                   data-evidence-title="Academic Excellence — With Honors (Grade 11)"
-                   data-evidence-meta="Senior High School Academic Distinction"
-                   data-evidence-year="2025"
-                   data-evidence-desc="Awarded With Honors distinction for consistent academic excellence during Grade 11 Senior High School."
-                   data-evidence-src="assets/images/proofs/cert-academic-honors-gr11.jpg">
-                <div class="min-w-0 pr-2">
-                  <div class="text-[11px] font-medium text-primary group-hover:text-amber-400 transition-colors truncate">
-                    With Honors (Grade 11)
-                  </div>
-                  <div class="text-[9.5px] font-mono-code text-secondary truncate">
-                    Senior High Distinction
-                  </div>
+              <div class="flex flex-col space-y-1 text-[9px] sm:text-[9.5px] border-t border-surface-container/40 dark:border-white/[0.05] pt-1.5 font-mono-code">
+                <div class="flex items-center gap-1.5 text-primary/90 truncate">
+                  <span class="w-1 h-1 rounded-full bg-secondary/50 shrink-0"></span>
+                  <span class="truncate">Primary Scholastic Foundation</span>
                 </div>
-                <div class="flex items-center gap-1 shrink-0 font-mono-code text-[9.5px] text-secondary pt-0.5">
-                  <span>2025</span>
-                  <span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                <div class="flex items-center gap-1.5 text-secondary truncate">
+                  <span class="w-1 h-1 rounded-full bg-secondary/50 shrink-0"></span>
+                  <span class="truncate">Early STEM &amp; Computing Focus</span>
                 </div>
               </div>
-
-              <!-- Item 3: With High Honors -->
-              <div class="group flex items-start justify-between py-1.5 px-2 -mx-2 rounded hover:bg-surface-container-low/50 dark:hover:bg-white/[0.03] transition-colors cursor-pointer"
-                   onclick="openEvidenceModal(this)"
-                   data-evidence-title="Academic Excellence — With High Honors"
-                   data-evidence-meta="Academic Excellence Distinction"
-                   data-evidence-year="SHS"
-                   data-evidence-desc="Awarded With High Honors distinction for exemplary academic rating and subject mastery."
-                   data-evidence-src="assets/images/proofs/high-honors.jpg">
-                <div class="min-w-0 pr-2">
-                  <div class="text-[11px] font-medium text-primary group-hover:text-amber-400 transition-colors truncate">
-                    With High Honors
-                  </div>
-                  <div class="text-[9.5px] font-mono-code text-secondary truncate">
-                    Academic Distinction
-                  </div>
-                </div>
-                <div class="flex items-center gap-1 shrink-0 font-mono-code text-[9.5px] text-secondary pt-0.5">
-                  <span>SHS</span>
-                  <span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
-                </div>
-              </div>
-
-              <!-- Item 4: Grade 9 Honors -->
-              <div class="group flex items-start justify-between py-1.5 px-2 -mx-2 rounded hover:bg-surface-container-low/50 dark:hover:bg-white/[0.03] transition-colors cursor-pointer"
-                   onclick="openEvidenceModal(this)"
-                   data-evidence-title="Academic Excellence — With Honors (Grade 9)"
-                   data-evidence-meta="Junior High School Academic Distinction"
-                   data-evidence-year="JHS"
-                   data-evidence-desc="Awarded With Honors distinction for outstanding performance during Grade 9 Junior High School."
-                   data-evidence-src="assets/images/proofs/high-honors.jpg">
-                <div class="min-w-0 pr-2">
-                  <div class="text-[11px] font-medium text-primary group-hover:text-amber-400 transition-colors truncate">
-                    With Honors (Grade 9)
-                  </div>
-                  <div class="text-[9.5px] font-mono-code text-secondary truncate">
-                    Junior High Distinction
-                  </div>
-                </div>
-                <div class="flex items-center gap-1 shrink-0 font-mono-code text-[9.5px] text-secondary pt-0.5">
-                  <span>JHS</span>
-                  <span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
-                </div>
-              </div>
-
             </div>
 
-            <!-- ====================================================== -->
-            <!-- COLUMN 2: LEADERSHIP & GOVERNANCE                      -->
-            <!-- ====================================================== -->
-            <div class="flex flex-col space-y-1.5 md:px-6 xl:px-8 md:border-r border-surface-container/50 dark:border-white/[0.07] border-b md:border-b-0 pb-4 md:pb-0">
-              <div class="flex items-center gap-1.5 mb-1 text-primary font-mono-code text-[9.5px] sm:text-[10px] font-semibold uppercase tracking-wider">
-                <span class="material-symbols-outlined text-[13px] text-amber-400">military_tech</span>
-                <span>LEADERSHIP</span>
-              </div>
-
-              <!-- Item 1: Sinayon Integrity -->
-              <div class="group flex items-start justify-between py-1.5 px-2 -mx-2 rounded hover:bg-surface-container-low/50 dark:hover:bg-white/[0.03] transition-colors cursor-pointer"
-                   onclick="openEvidenceModal(this)"
-                   data-evidence-title="Sinayon: The Golden Flame — PEN Value: Integrity Awardee"
-                   data-evidence-meta="Student Leadership Distinction // PHINMA UPang"
-                   data-evidence-year="2026"
-                   data-evidence-desc="Conferred the prestigious PEN Value: Integrity Award during Sinayon: The Golden Flame institutional governance honors."
-                   data-evidence-src="assets/images/proofs/cert-sinayon-integrity.jpg">
-                <div class="min-w-0 pr-2">
-                  <div class="text-[11px] font-medium text-primary group-hover:text-amber-400 transition-colors truncate">
-                    Sinayon Integrity Award
+            <!-- 02: JUNIOR HIGH SCHOOL -->
+            <div class="group flex flex-col justify-between p-2.5 sm:p-3 rounded-lg border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest/60 dark:bg-white/[0.02] hover:border-surface-container-high dark:hover:border-white/20 transition-all duration-200">
+              <div>
+                <div class="flex items-center justify-between mb-1.5 font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-wider">
+                  <div class="flex items-center gap-1.5 font-semibold text-primary">
+                    <span class="material-symbols-outlined text-[13px] text-amber-400">menu_book</span>
+                    <span>02 // JUNIOR HIGH</span>
                   </div>
-                  <div class="text-[9.5px] font-mono-code text-secondary truncate">
-                    PHINMA UPang Distinction
-                  </div>
+                  <span class="text-[8.5px] text-secondary/70">2018–2022</span>
                 </div>
-                <div class="flex items-center gap-1 shrink-0 font-mono-code text-[9.5px] text-secondary pt-0.5">
-                  <span>2026</span>
-                  <span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                <div class="flex items-center gap-2.5 mb-2">
+                  <div class="w-9 h-9 rounded-md border border-surface-container/60 dark:border-white/10 p-0.5 bg-surface-container-low dark:bg-white/[0.06] flex items-center justify-center shrink-0">
+                    <img src="assets/images/schools/logos/deped-mnhs-logo-opt.png" alt="Mapandan National High School Logo" class="w-full h-full object-contain">
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <h3 class="text-[11px] sm:text-[11.5px] font-bold text-primary leading-tight truncate" title="Mapandan National High School">Mapandan Nat'l High School</h3>
+                    <div class="text-[8.5px] sm:text-[9px] font-mono-code text-secondary truncate">Mapandan, Pangasinan</div>
+                  </div>
                 </div>
               </div>
-
-              <!-- Item 2: Pixel Perfect Chairmanship -->
-              <div class="group flex items-start justify-between py-1.5 px-2 -mx-2 rounded hover:bg-surface-container-low/50 dark:hover:bg-white/[0.03] transition-colors cursor-pointer"
-                   onclick="openEvidenceModal(this)"
-                   data-evidence-title="Exemplary Chairmanship — PIXEL PERFECT"
-                   data-evidence-meta="Creative Direction & Event Leadership // PIXELS Club"
-                   data-evidence-year="2025"
-                   data-evidence-desc="Recognized for exemplary chairmanship, creative direction, and executive delivery of PIXEL PERFECT."
-                   data-evidence-src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg">
-                <div class="min-w-0 pr-2">
-                  <div class="text-[11px] font-medium text-primary group-hover:text-amber-400 transition-colors truncate">
-                    PIXEL PERFECT Chairmanship
+              <div class="flex flex-col space-y-1 text-[9px] sm:text-[9.5px] border-t border-surface-container/40 dark:border-white/[0.05] pt-1.5 font-mono-code">
+                <div class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors"
+                     onclick="openEvidenceModal(this)"
+                     data-evidence-title="Academic Excellence — With Honors (Grade 9)"
+                     data-evidence-meta="Junior High School Academic Distinction • MNHS"
+                     data-evidence-year="2021"
+                     data-evidence-desc="Awarded With Honors distinction for outstanding academic performance during Grade 9 Junior High School at Mapandan National High School."
+                     data-evidence-src="assets/images/proofs/cert-academic-honors-gr11.jpg">
+                  <div class="flex items-center gap-1.5 min-w-0">
+                    <span class="w-1 h-1 rounded-full bg-secondary/50 shrink-0"></span>
+                    <span class="text-primary hover:underline font-medium truncate">With Honors (Grade 9)</span>
                   </div>
-                  <div class="text-[9.5px] font-mono-code text-secondary truncate">
-                    Event Leadership Distinction
-                  </div>
+                  <span class="text-[9px] text-secondary ml-1 shrink-0">↗</span>
                 </div>
-                <div class="flex items-center gap-1 shrink-0 font-mono-code text-[9.5px] text-secondary pt-0.5">
-                  <span>2025</span>
-                  <span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
-                </div>
-              </div>
-
-              <!-- Item 3: PIXELS Club President -->
-              <div class="group flex items-start justify-between py-1.5 px-2 -mx-2 rounded hover:bg-surface-container-low/50 dark:hover:bg-white/[0.03] transition-colors cursor-pointer"
-                   onclick="openEvidenceModal(this)"
-                   data-evidence-title="PIXELS Club — President & Event Chairperson"
-                   data-evidence-meta="Executive Student Organization Leadership"
-                   data-evidence-year="2025–26"
-                   data-evidence-desc="Elected President & Event Chairperson of PIXELS Multimedia Arts Club, overseeing operations and creative productions."
-                   data-evidence-src="assets/images/proofs/pixels-president.jpg">
-                <div class="min-w-0 pr-2">
-                  <div class="text-[11px] font-medium text-primary group-hover:text-amber-400 transition-colors truncate">
-                    PIXELS Club President
+                <div class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors"
+                     onclick="openEvidenceModal(this)"
+                     data-evidence-title="Mr. India — Mr. &amp; Ms. UNC (Grade 10)"
+                     data-evidence-meta="Campus Pageantry &amp; Cultural Ambassador • Grade 10"
+                     data-evidence-year="Gr. 10"
+                     data-evidence-desc="Represented India in the prestigious Mr. &amp; Ms. UNC cultural showcase, demonstrating poise, cultural diplomacy, and stage presence."
+                     data-evidence-src="assets/images/proofs/event-chairperson.jpg">
+                  <div class="flex items-center gap-1.5 min-w-0">
+                    <span class="w-1 h-1 rounded-full bg-secondary/50 shrink-0"></span>
+                    <span class="text-primary hover:underline font-medium truncate">Mr. India — Mr. &amp; Ms. UNC</span>
                   </div>
-                  <div class="text-[9.5px] font-mono-code text-secondary truncate">
-                    Executive Governance
-                  </div>
-                </div>
-                <div class="flex items-center gap-1 shrink-0 font-mono-code text-[9.5px] text-secondary pt-0.5">
-                  <span>25–26</span>
-                  <span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                  <span class="text-[9px] text-secondary ml-1 shrink-0">↗</span>
                 </div>
               </div>
-
-              <!-- Item 4: Head of Photo Editing -->
-              <div class="group flex items-start justify-between py-1.5 px-2 -mx-2 rounded hover:bg-surface-container-low/50 dark:hover:bg-white/[0.03] transition-colors cursor-pointer"
-                   onclick="openEvidenceModal(this)"
-                   data-evidence-title="PIXELS Club — Head of Photo Editing"
-                   data-evidence-meta="Departmental Media Leadership & Pipeline"
-                   data-evidence-year="2024–25"
-                   data-evidence-desc="Appointed Head of Photo Editing, managing digital imaging workflows, asset curation, and student media coverage."
-                   data-evidence-src="assets/images/proofs/pixels-photo-editor.jpg">
-                <div class="min-w-0 pr-2">
-                  <div class="text-[11px] font-medium text-primary group-hover:text-amber-400 transition-colors truncate">
-                    Head of Photo Editing
-                  </div>
-                  <div class="text-[9.5px] font-mono-code text-secondary truncate">
-                    PIXELS Media Leadership
-                  </div>
-                </div>
-                <div class="flex items-center gap-1 shrink-0 font-mono-code text-[9.5px] text-secondary pt-0.5">
-                  <span>24–25</span>
-                  <span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
-                </div>
-              </div>
-
             </div>
 
-            <!-- ====================================================== -->
-            <!-- COLUMN 3: EXTRACURRICULARS & COMPETITIONS              -->
-            <!-- ====================================================== -->
-            <div class="flex flex-col space-y-1.5 md:pl-6 xl:pl-8">
-              <div class="flex items-center gap-1.5 mb-1 text-primary font-mono-code text-[9.5px] sm:text-[10px] font-semibold uppercase tracking-wider">
-                <span class="material-symbols-outlined text-[13px] text-amber-400">emoji_events</span>
-                <span>EXTRACURRICULARS</span>
-              </div>
-
-              <!-- Item 1: Best Pitch -->
-              <div class="group flex items-start justify-between py-1.5 px-2 -mx-2 rounded hover:bg-surface-container-low/50 dark:hover:bg-white/[0.03] transition-colors cursor-pointer"
-                   onclick="openEvidenceModal(this)"
-                   data-evidence-title="Best Pitch — The Work Behind the Luck Event"
-                   data-evidence-meta="Pitching & Project Presentation Competition"
-                   data-evidence-year="2025"
-                   data-evidence-desc="Awarded Best Pitch distinction for compelling project delivery at The Work Behind the Luck symposium."
-                   data-evidence-src="assets/images/proofs/video-editing-winner.jpg">
-                <div class="min-w-0 pr-2">
-                  <div class="text-[11px] font-medium text-primary group-hover:text-amber-400 transition-colors truncate">
-                    Best Pitch: Work Behind Luck
+            <!-- 03: SENIOR HIGH SCHOOL -->
+            <div class="group flex flex-col justify-between p-2.5 sm:p-3 rounded-lg border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest/60 dark:bg-white/[0.02] hover:border-surface-container-high dark:hover:border-white/20 transition-all duration-200">
+              <div>
+                <div class="flex items-center justify-between mb-1.5 font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-wider">
+                  <div class="flex items-center gap-1.5 font-semibold text-primary">
+                    <span class="material-symbols-outlined text-[13px] text-amber-400">military_tech</span>
+                    <span>03 // SENIOR HIGH</span>
                   </div>
-                  <div class="text-[9.5px] font-mono-code text-secondary truncate">
-                    Pitch Competition Winner
-                  </div>
+                  <span class="text-[8.5px] text-secondary/70">2022–2024</span>
                 </div>
-                <div class="flex items-center gap-1 shrink-0 font-mono-code text-[9.5px] text-secondary pt-0.5">
-                  <span>2025</span>
-                  <span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                <div class="flex items-center gap-2.5 mb-2">
+                  <div class="w-9 h-9 rounded-md border border-surface-container/60 dark:border-white/10 p-0.5 bg-surface-container-low dark:bg-white/[0.06] flex items-center justify-center shrink-0">
+                    <img src="assets/images/schools/logos/upang-logo-opt.png" alt="PHINMA University of Pangasinan Logo" class="w-full h-full object-contain">
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <h3 class="text-[11px] sm:text-[11.5px] font-bold text-primary leading-tight truncate" title="PHINMA University of Pangasinan">PHINMA Univ. of Pangasinan</h3>
+                    <div class="text-[8.5px] sm:text-[9px] font-mono-code text-secondary truncate">Dagupan City, Pangasinan</div>
+                  </div>
                 </div>
               </div>
-
-              <!-- Item 2: DSPC 3rd Place -->
-              <div class="group flex items-start justify-between py-1.5 px-2 -mx-2 rounded hover:bg-surface-container-low/50 dark:hover:bg-white/[0.03] transition-colors cursor-pointer"
-                   onclick="openEvidenceModal(this)"
-                   data-evidence-title="3rd Place — Radio Scriptwriting & Broadcasting (Filipino)"
-                   data-evidence-meta="DSPC Division Schools Press Conference // Secondary Level"
-                   data-evidence-year="2024"
-                   data-evidence-desc="Awarded 3rd Place Bronze Medal in Radio Scriptwriting and Broadcasting - Filipino during the Division Schools Press Conference."
-                   data-evidence-src="assets/images/proofs/cert-dspc-radio-broadcasting.jpg">
-                <div class="min-w-0 pr-2">
-                  <div class="text-[11px] font-medium text-primary group-hover:text-amber-400 transition-colors truncate">
-                    DSPC 3rd Place (Bronze)
+              <div class="flex flex-col space-y-1 text-[9px] sm:text-[9.5px] border-t border-surface-container/40 dark:border-white/[0.05] pt-1.5 font-mono-code">
+                <div class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors"
+                     onclick="openEvidenceModal(this)"
+                     data-evidence-title="Academic Excellence — With High Honors"
+                     data-evidence-meta="Senior High School Academic Distinction • UPang"
+                     data-evidence-year="2025"
+                     data-evidence-desc="Awarded With High Honors distinction for outstanding academic performance during Senior High School at PHINMA University of Pangasinan."
+                     data-evidence-src="assets/images/proofs/cert-academic-honors-gr12.jpg">
+                  <div class="flex items-center gap-1.5 min-w-0">
+                    <span class="w-1 h-1 rounded-full bg-secondary/50 shrink-0"></span>
+                    <span class="text-primary hover:underline font-medium truncate">With High Honors &amp; Honors</span>
                   </div>
-                  <div class="text-[9.5px] font-mono-code text-secondary truncate">
-                    Radio Scriptwriting &amp; Broadcast
-                  </div>
+                  <span class="text-[9px] text-secondary ml-1 shrink-0">↗</span>
                 </div>
-                <div class="flex items-center gap-1 shrink-0 font-mono-code text-[9.5px] text-secondary pt-0.5">
-                  <span>2024</span>
-                  <span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
-                </div>
-              </div>
-
-              <!-- Item 3: Mr. India -->
-              <div class="group flex items-start justify-between py-1.5 px-2 -mx-2 rounded hover:bg-surface-container-low/50 dark:hover:bg-white/[0.03] transition-colors cursor-pointer"
-                   onclick="openEvidenceModal(this)"
-                   data-evidence-title="Mr. India — Mr. & Ms. UNC (Grade 10)"
-                   data-evidence-meta="Campus Pageantry & Cultural Ambassador"
-                   data-evidence-year="Gr. 10"
-                   data-evidence-desc="Represented India in the prestigious Mr. & Ms. UNC cultural showcase, demonstrating poise, cultural diplomacy, and stage presence."
-                   data-evidence-src="assets/images/proofs/event-chairperson.jpg">
-                <div class="min-w-0 pr-2">
-                  <div class="text-[11px] font-medium text-primary group-hover:text-amber-400 transition-colors truncate">
-                    Mr. India — Mr. &amp; Ms. UNC
+                <div class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors"
+                     onclick="openEvidenceModal(this)"
+                     data-evidence-title="Sinayon Integrity Award"
+                     data-evidence-meta="Institutional Character &amp; Leadership Honor • UPang"
+                     data-evidence-year="2024"
+                     data-evidence-desc="Conferred for exemplary ethical character, personal integrity, and community dedication at PHINMA University of Pangasinan."
+                     data-evidence-src="assets/images/proofs/cert-sinayon-integrity.jpg">
+                  <div class="flex items-center gap-1.5 min-w-0">
+                    <span class="w-1 h-1 rounded-full bg-secondary/50 shrink-0"></span>
+                    <span class="text-primary hover:underline font-medium truncate">Sinayon Integrity Award</span>
                   </div>
-                  <div class="text-[9.5px] font-mono-code text-secondary truncate">
-                    Grade 10 Cultural Distinction
-                  </div>
-                </div>
-                <div class="flex items-center gap-1 shrink-0 font-mono-code text-[9.5px] text-secondary pt-0.5">
-                  <span>Gr.10</span>
-                  <span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                  <span class="text-[9px] text-secondary ml-1 shrink-0">↗</span>
                 </div>
               </div>
+            </div>
 
-              <!-- Item 4: IMBC Badminton -->
-              <div class="group flex items-start justify-between py-1.5 px-2 -mx-2 rounded hover:bg-surface-container-low/50 dark:hover:bg-white/[0.03] transition-colors cursor-pointer"
-                   onclick="openEvidenceModal(this)"
-                   data-evidence-title="Top Competitor & Sportsmanship — IMBC Badminton Tournament"
-                   data-evidence-meta="Athletic Excellence & Sportsmanship"
-                   data-evidence-year="2025"
-                   data-evidence-desc="Awarded Top Competitor distinction for exemplary athletic discipline, tactical performance, and sportsmanship."
-                   data-evidence-src="assets/images/proofs/cert-imbc-badminton.jpg">
-                <div class="min-w-0 pr-2">
-                  <div class="text-[11px] font-medium text-primary group-hover:text-amber-400 transition-colors truncate">
-                    IMBC Badminton Top Competitor
+            <!-- 04: 1ST YEAR (COLLEGE) -->
+            <div class="group flex flex-col justify-between p-2.5 sm:p-3 rounded-lg border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest/60 dark:bg-white/[0.02] hover:border-surface-container-high dark:hover:border-white/20 transition-all duration-200">
+              <div>
+                <div class="flex items-center justify-between mb-1.5 font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-wider">
+                  <div class="flex items-center gap-1.5 font-semibold text-primary">
+                    <span class="material-symbols-outlined text-[13px] text-amber-400">terminal</span>
+                    <span>04 // 1ST YEAR (COLLEGE)</span>
                   </div>
-                  <div class="text-[9.5px] font-mono-code text-secondary truncate">
-                    Athletics &amp; Sportsmanship
-                  </div>
+                  <span class="px-1.5 py-0.2 font-mono-code text-[8px] bg-primary/10 text-primary border border-primary/20 rounded font-semibold">CURRENT</span>
                 </div>
-                <div class="flex items-center gap-1 shrink-0 font-mono-code text-[9.5px] text-secondary pt-0.5">
-                  <span>2025</span>
-                  <span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                <div class="flex items-center gap-2.5 mb-2">
+                  <div class="w-9 h-9 rounded-md border border-surface-container/60 dark:border-white/10 p-0.5 bg-surface-container-low dark:bg-white/[0.06] flex items-center justify-center shrink-0">
+                    <img src="assets/images/schools/logos/uc-seal-opt.png" alt="University of the Cordilleras Seal" class="w-full h-full object-contain">
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <h3 class="text-[11px] sm:text-[11.5px] font-bold text-primary leading-tight truncate" title="University of the Cordilleras">Univ. of the Cordilleras</h3>
+                    <div class="text-[8.5px] sm:text-[9px] font-mono-code text-secondary truncate">Gov. Pack Rd, Baguio City</div>
+                  </div>
                 </div>
               </div>
-
+              <div class="flex flex-col space-y-1 text-[9px] sm:text-[9.5px] border-t border-surface-container/40 dark:border-white/[0.05] pt-1.5 font-mono-code">
+                <div class="flex items-center gap-1.5 text-primary/90 truncate">
+                  <span class="w-1 h-1 rounded-full bg-secondary/50 shrink-0"></span>
+                  <span class="truncate">BSIT • CITCS - 1F (Group B)</span>
+                </div>
+                <div class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors"
+                     onclick="openEvidenceModal(this)"
+                     data-evidence-title="Top Competitor &amp; Sportsmanship — IMBC Badminton Tournament"
+                     data-evidence-meta="Athletic Excellence &amp; Sportsmanship • University of the Cordilleras"
+                     data-evidence-year="2025"
+                     data-evidence-desc="Awarded Top Competitor distinction for exemplary athletic discipline, tactical performance, and sportsmanship."
+                     data-evidence-src="assets/images/proofs/cert-imbc-badminton.jpg">
+                  <div class="flex items-center gap-1.5 min-w-0">
+                    <span class="w-1 h-1 rounded-full bg-secondary/50 shrink-0"></span>
+                    <span class="text-primary hover:underline font-medium truncate">IMBC Badminton Top Competitor</span>
+                  </div>
+                  <span class="text-[9px] text-secondary ml-1 shrink-0">↗</span>
+                </div>
+              </div>
             </div>
 
           </div>
 
+          <!-- ======================================================== -->
+          <!-- CONTINUOUS ANIMATED PROOF MARQUEE (ALL 12 CERTIFICATES)   -->
+          <!-- Seamless Infinite Stream • Pause on Hover • Click Modal   -->
+          <!-- ======================================================== -->
+          <div class="mt-2.5 sm:mt-3 pt-2 border-t border-surface-container/50 dark:border-white/[0.07]">
+            <div class="flex items-center justify-between mb-1.5 font-mono-code text-[8.5px] sm:text-[9px]">
+              <div class="flex items-center gap-1.5 text-primary font-semibold tracking-wider uppercase">
+                <span class="material-symbols-outlined text-[13px] text-amber-400">verified</span>
+                <span>LIVE CREDENTIAL STREAM — 12 VERIFIED CERTIFICATES &amp; HONORS</span>
+              </div>
+              <div class="flex items-center gap-2 text-secondary tracking-wider uppercase">
+                <span class="hidden sm:inline-block px-1.5 py-0.2 rounded text-[7.5px] bg-surface-container-low dark:bg-white/[0.05] border border-surface-container/50 dark:border-white/[0.07]">HOVER TO PAUSE • CLICK TO AUDIT</span>
+                <span class="text-secondary/70">CONTINUOUS AUDIT</span>
+              </div>
+            </div>
+
+            <!-- Marquee Container -->
+            <div class="proof-marquee-container relative overflow-hidden w-full rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-low/30 dark:bg-white/[0.02] p-1.5 [mask-image:linear-gradient(to_right,transparent,black_3%,black_97%,transparent)]">
+              <div class="proof-marquee-track flex">
+                <!-- SET A -->
+                <div class="flex items-center gap-2 pr-2 shrink-0">
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Academic Excellence — With High Honors"
+                       data-evidence-meta="Senior High School Academic Distinction • UPang"
+                       data-evidence-year="2025"
+                       data-evidence-desc="Awarded With High Honors distinction for outstanding academic performance during Senior High School at PHINMA University of Pangasinan."
+                       data-evidence-src="assets/images/proofs/cert-academic-honors-gr12.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-academic-honors-gr12.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        With High Honors
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">SHS • UPang</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Sinayon Integrity Award"
+                       data-evidence-meta="Institutional Character & Leadership Honor • UPang"
+                       data-evidence-year="2024"
+                       data-evidence-desc="Conferred for exemplary ethical character, personal integrity, and community dedication at PHINMA University of Pangasinan."
+                       data-evidence-src="assets/images/proofs/cert-sinayon-integrity.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-sinayon-integrity.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        Sinayon Integrity
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Honor • UPang</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Academic Excellence — With Honors (Grade 12)"
+                       data-evidence-meta="Senior High School Academic Distinction • UPang"
+                       data-evidence-year="2025"
+                       data-evidence-desc="Awarded With Honors distinction for outstanding academic performance during Grade 12 Senior High School."
+                       data-evidence-src="assets/images/proofs/cert-academic-honors-gr12.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-academic-honors-gr12.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        With Honors (Gr. 12)
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Grade 12 • UPang</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Academic Excellence — With Honors (Grade 11)"
+                       data-evidence-meta="Senior High School Academic Distinction • UPang"
+                       data-evidence-year="2024"
+                       data-evidence-desc="Awarded With Honors distinction for consistent academic excellence during Grade 11 Senior High School."
+                       data-evidence-src="assets/images/proofs/cert-academic-honors-gr11.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-academic-honors-gr11.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        With Honors (Gr. 11)
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Grade 11 • UPang</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Academic Excellence — With Honors (Grade 9)"
+                       data-evidence-meta="Junior High School Academic Distinction • MNHS"
+                       data-evidence-year="2021"
+                       data-evidence-desc="Awarded With Honors distinction for consistent academic excellence during Grade 9 Junior High School at Mapandan National High School."
+                       data-evidence-src="assets/images/proofs/cert-academic-honors-gr11.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-academic-honors-gr11.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        With Honors (Gr. 9)
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Grade 9 • MNHS</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="DSPC 3rd Place (Bronze) — Radio Broadcasting"
+                       data-evidence-meta="Division Schools Press Conference • Scriptwriting & Anchoring"
+                       data-evidence-year="2024"
+                       data-evidence-desc="Won 3rd Place Bronze for Radio Scriptwriting and Broadcasting - Filipino during the Division Schools Press Conference."
+                       data-evidence-src="assets/images/proofs/cert-dspc-radio-broadcasting.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-dspc-radio-broadcasting.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        DSPC 3rd Place (Bronze)
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">DSPC • Journalism</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Chairperson & Best Pitch — The Work Behind The Luck"
+                       data-evidence-meta="PIXELS Organization • Event Leadership & Pitch Champion"
+                       data-evidence-year="2024"
+                       data-evidence-desc="Chaired 'The Work Behind The Luck' event and won Best Pitch for outstanding project presentation and event orchestration."
+                       data-evidence-src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        PIXELS Best Pitch
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">PIXELS • Best Pitch</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="President — PIXELS Multimedia Organization"
+                       data-evidence-meta="Student Executive Leadership • Creative Direction"
+                       data-evidence-year="2024"
+                       data-evidence-desc="Served as President of PIXELS, directing multimedia production, executive teams, creative projects, and technical workshops."
+                       data-evidence-src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        PIXELS President
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">President • Executive</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Mr. India — Mr. & Ms. UNC (Grade 10)"
+                       data-evidence-meta="Campus Pageantry & Cultural Ambassador • Grade 10"
+                       data-evidence-year="Gr. 10"
+                       data-evidence-desc="Represented India in the prestigious Mr. & Ms. UNC cultural showcase, demonstrating poise, cultural diplomacy, and stage presence."
+                       data-evidence-src="assets/images/proofs/event-chairperson.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/event-chairperson.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        Mr. India — UNC
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Cultural • UNC</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Top Competitor & Sportsmanship — IMBC Badminton"
+                       data-evidence-meta="Athletic Excellence & Sportsmanship • University of the Cordilleras"
+                       data-evidence-year="2025"
+                       data-evidence-desc="Awarded Top Competitor distinction for exemplary athletic discipline, tactical performance, and sportsmanship."
+                       data-evidence-src="assets/images/proofs/cert-imbc-badminton.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-imbc-badminton.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        IMBC Badminton Top
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Athletics • UC</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Chief Photo Editor — PIXELS Creative Media"
+                       data-evidence-meta="Editorial Leadership & Visual Arts • Senior High School"
+                       data-evidence-year="2023"
+                       data-evidence-desc="Led photography and visual direction for campus events, publications, and official media portfolios."
+                       data-evidence-src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        PIXELS Photo Editor
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Media • Photo Editor</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="First Place — Video Editing & Multimedia Production"
+                       data-evidence-meta="Technical & Creative Competition Distinction"
+                       data-evidence-year="2023"
+                       data-evidence-desc="Won First Place for exemplary video post-production, pacing, motion storytelling, and audiovisual composition."
+                       data-evidence-src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        Video Editing Winner
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Production • Winner</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- SET B (Duplicate for seamless loop) -->
+                <div class="flex items-center gap-2 pr-2 shrink-0" aria-hidden="true">
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Academic Excellence — With High Honors"
+                       data-evidence-meta="Senior High School Academic Distinction • UPang"
+                       data-evidence-year="2025"
+                       data-evidence-desc="Awarded With High Honors distinction for outstanding academic performance during Senior High School at PHINMA University of Pangasinan."
+                       data-evidence-src="assets/images/proofs/cert-academic-honors-gr12.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-academic-honors-gr12.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        With High Honors
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">SHS • UPang</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Sinayon Integrity Award"
+                       data-evidence-meta="Institutional Character & Leadership Honor • UPang"
+                       data-evidence-year="2024"
+                       data-evidence-desc="Conferred for exemplary ethical character, personal integrity, and community dedication at PHINMA University of Pangasinan."
+                       data-evidence-src="assets/images/proofs/cert-sinayon-integrity.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-sinayon-integrity.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        Sinayon Integrity
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Honor • UPang</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Academic Excellence — With Honors (Grade 12)"
+                       data-evidence-meta="Senior High School Academic Distinction • UPang"
+                       data-evidence-year="2025"
+                       data-evidence-desc="Awarded With Honors distinction for outstanding academic performance during Grade 12 Senior High School."
+                       data-evidence-src="assets/images/proofs/cert-academic-honors-gr12.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-academic-honors-gr12.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        With Honors (Gr. 12)
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Grade 12 • UPang</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Academic Excellence — With Honors (Grade 11)"
+                       data-evidence-meta="Senior High School Academic Distinction • UPang"
+                       data-evidence-year="2024"
+                       data-evidence-desc="Awarded With Honors distinction for consistent academic excellence during Grade 11 Senior High School."
+                       data-evidence-src="assets/images/proofs/cert-academic-honors-gr11.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-academic-honors-gr11.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        With Honors (Gr. 11)
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Grade 11 • UPang</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Academic Excellence — With Honors (Grade 9)"
+                       data-evidence-meta="Junior High School Academic Distinction • MNHS"
+                       data-evidence-year="2021"
+                       data-evidence-desc="Awarded With Honors distinction for consistent academic excellence during Grade 9 Junior High School at Mapandan National High School."
+                       data-evidence-src="assets/images/proofs/cert-academic-honors-gr11.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-academic-honors-gr11.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        With Honors (Gr. 9)
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Grade 9 • MNHS</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="DSPC 3rd Place (Bronze) — Radio Broadcasting"
+                       data-evidence-meta="Division Schools Press Conference • Scriptwriting & Anchoring"
+                       data-evidence-year="2024"
+                       data-evidence-desc="Won 3rd Place Bronze for Radio Scriptwriting and Broadcasting - Filipino during the Division Schools Press Conference."
+                       data-evidence-src="assets/images/proofs/cert-dspc-radio-broadcasting.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-dspc-radio-broadcasting.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        DSPC 3rd Place (Bronze)
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">DSPC • Journalism</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Chairperson & Best Pitch — The Work Behind The Luck"
+                       data-evidence-meta="PIXELS Organization • Event Leadership & Pitch Champion"
+                       data-evidence-year="2024"
+                       data-evidence-desc="Chaired 'The Work Behind The Luck' event and won Best Pitch for outstanding project presentation and event orchestration."
+                       data-evidence-src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        PIXELS Best Pitch
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">PIXELS • Best Pitch</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="President — PIXELS Multimedia Organization"
+                       data-evidence-meta="Student Executive Leadership • Creative Direction"
+                       data-evidence-year="2024"
+                       data-evidence-desc="Served as President of PIXELS, directing multimedia production, executive teams, creative projects, and technical workshops."
+                       data-evidence-src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        PIXELS President
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">President • Executive</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Mr. India — Mr. & Ms. UNC (Grade 10)"
+                       data-evidence-meta="Campus Pageantry & Cultural Ambassador • Grade 10"
+                       data-evidence-year="Gr. 10"
+                       data-evidence-desc="Represented India in the prestigious Mr. & Ms. UNC cultural showcase, demonstrating poise, cultural diplomacy, and stage presence."
+                       data-evidence-src="assets/images/proofs/event-chairperson.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/event-chairperson.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        Mr. India — UNC
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Cultural • UNC</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Top Competitor & Sportsmanship — IMBC Badminton"
+                       data-evidence-meta="Athletic Excellence & Sportsmanship • University of the Cordilleras"
+                       data-evidence-year="2025"
+                       data-evidence-desc="Awarded Top Competitor distinction for exemplary athletic discipline, tactical performance, and sportsmanship."
+                       data-evidence-src="assets/images/proofs/cert-imbc-badminton.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-imbc-badminton.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        IMBC Badminton Top
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Athletics • UC</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="Chief Photo Editor — PIXELS Creative Media"
+                       data-evidence-meta="Editorial Leadership & Visual Arts • Senior High School"
+                       data-evidence-year="2023"
+                       data-evidence-desc="Led photography and visual direction for campus events, publications, and official media portfolios."
+                       data-evidence-src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        PIXELS Photo Editor
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Media • Photo Editor</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proof-tile flex items-center gap-2 px-2.5 py-1.5 rounded-md border border-surface-container/60 dark:border-white/[0.08] bg-surface-container-lowest dark:bg-[#121214] hover:border-surface-container-high dark:hover:border-white/30 hover:bg-surface-container-low dark:hover:bg-white/[0.05] transition-all cursor-pointer w-[185px] shrink-0 select-none shadow-xs"
+                       onclick="openEvidenceModal(this)"
+                       data-evidence-title="First Place — Video Editing & Multimedia Production"
+                       data-evidence-meta="Technical & Creative Competition Distinction"
+                       data-evidence-year="2023"
+                       data-evidence-desc="Won First Place for exemplary video post-production, pacing, motion storytelling, and audiovisual composition."
+                       data-evidence-src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg">
+                    <div class="relative w-8 h-8 rounded overflow-hidden shrink-0 border border-surface-container/70 dark:border-white/10 bg-black/10">
+                      <img src="assets/images/proofs/cert-pixel-perfect-chairmanship.jpg" alt="Proof" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-[9.5px] font-semibold text-primary truncate hover:text-amber-400 transition-colors">
+                        Video Editing Winner
+                      </div>
+                      <div class="flex items-center justify-between font-mono-code text-[8px] text-secondary">
+                        <span class="truncate">Production • Winner</span>
+                        <span class="flex items-center gap-0.5 ml-1 shrink-0 text-amber-400">
+                          <span class="material-symbols-outlined text-[10px]">verified</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Bottom Evidence Verification Footer -->
-          <div class="pt-3 mt-3 border-t border-surface-container/50 dark:border-white/[0.07] flex items-center justify-between font-mono-code text-[9px] sm:text-[9.5px] text-secondary">
+          <div class="pt-2 mt-1.5 border-t border-surface-container/40 dark:border-white/[0.05] flex items-center justify-between font-mono-code text-[8.5px] sm:text-[9px] text-secondary">
             <button type="button" 
                     onclick="document.querySelector('#timeline [data-evidence-src]').click()" 
-                    class="text-primary hover:text-amber-400 transition-colors flex items-center gap-1 cursor-pointer">
-              <span class="material-symbols-outlined text-[13px] text-amber-400">verified</span>
-              <span>[Click Any Record to Inspect Certificate Proof ↗]</span>
+                    class="hover:text-primary transition-colors flex items-center gap-1 cursor-pointer">
+              <span class="material-symbols-outlined text-[12px] text-amber-400">verified</span>
+              <span>[Click Any Credential or Stream Tile to Inspect Official Proof ↗]</span>
             </button>
-            <span class="text-secondary/70">12 VERIFIED CREDENTIALS // ZERO SCROLL</span>
+            <span class="text-secondary/70">4 ACADEMIC STAGES // ZERO SCROLL ENFORCED</span>
           </div>
 
         </div>
