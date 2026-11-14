@@ -111,8 +111,7 @@
       display: inline-block;
       width: 0.55em;
       height: 1.15em;
-      background: #fbbf24;
-      box-shadow: 0 0 8px rgba(251, 191, 36, 0.6);
+      background: var(--color-primary);
       margin-left: 0.35rem;
       vertical-align: -0.15em;
       animation: cliBlink 1s step-end infinite;
@@ -153,8 +152,6 @@
     /* Smooth underline nav active */
     .nav-link.active span {
       width: 100% !important;
-      background-color: #fbbf24 !important;
-      box-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
     }
 
 
@@ -271,9 +268,9 @@
     }
 
     html.dark .tech-token-btn.is-selected .tech-token-3d {
-      background: rgba(251, 191, 36, 0.08);
-      border-color: #fbbf24;
-      box-shadow: 0 0 0 1.5px #fbbf24, 0 4px 16px rgba(251, 191, 36, 0.25);
+      background: rgba(255, 255, 255, 0.09);
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1.5px #ffffff, 0 4px 16px rgba(0, 0, 0, 0.6);
     }
 
     .tech-token-btn.is-selected .tech-token-label {
@@ -1114,13 +1111,11 @@
   }
   .island-dot.active {
     width: 18px;
-    background: #fbbf24 !important;
-    box-shadow: 0 0 10px rgba(251, 191, 36, 0.55);
+    background: #ffffff;
     border-radius: 9999px;
   }
   html:not(.dark) .island-dot.active {
-    background: #d97706 !important;
-    box-shadow: 0 0 10px rgba(217, 119, 6, 0.4);
+    background: #000000;
   }
 
   /* Responsive Viewport scaling for Presentation views */
@@ -1379,21 +1374,21 @@
       <!-- Zone 2: Navigation (Center) -->
       <nav class="header-nav-zone hidden xl:flex items-center gap-5 2xl:gap-7 justify-center flex-1 min-w-0" id="desktop-nav">
         <a href="#home" class="relative group nav-link font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-1 transition-colors whitespace-nowrap">
-          Home<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+          Home<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <a href="#about" class="relative group nav-link font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-1 transition-colors whitespace-nowrap">Personal Information<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+        <a href="#about" class="relative group nav-link font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-1 transition-colors whitespace-nowrap">Personal Information<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
         </a>
         <a href="#timeline" class="relative group nav-link font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-1 transition-colors whitespace-nowrap">
-          Achievements<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+          Achievements<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
         </a>
         <a href="#work-and-skills" class="relative group nav-link font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-1 transition-colors whitespace-nowrap">
-          Experience &amp; Skills<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+          Experience &amp; Skills<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
         </a>
         <a href="#projects" class="relative group nav-link font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-1 transition-colors whitespace-nowrap">
-          Projects<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+          Projects<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
         </a>
         <a href="#connect" class="relative group nav-link font-label-caps text-[11px] uppercase tracking-wider text-on-surface-variant hover:text-on-surface py-1 transition-colors whitespace-nowrap">
-          Connect<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+          Connect<span class="absolute -bottom-0.5 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
         </a>
       </nav>
 
@@ -1403,7 +1398,7 @@
         <div class="hidden 2xl:flex flex-col text-right font-mono-code select-none pr-3 border-r border-outline/20">
           <div class="flex items-center justify-end gap-1.5 text-[10px] text-on-surface-variant tracking-wider">
             <span>[NODE: 192.168.1.104]</span>
-            <span class="text-amber-400 font-medium" id="live-rtt-indicator">RTT: 18ms</span>
+            <span class="text-primary font-medium" id="live-rtt-indicator">RTT: 18ms</span>
           </div>
           <div class="flex items-center justify-end gap-1 mt-0.5">
             <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
@@ -1414,8 +1409,8 @@
 
 
         <!-- J.A.R.V.I.S. Audio Briefing Button -->
-        <button id="jarvis-header-btn" title="Play J.A.R.V.I.S. Executive Briefing" aria-label="Play JARVIS Briefing" class="px-2.5 py-1 rounded-full border border-outline/40 hover:border-amber-400/50 flex items-center gap-1.5 hover:bg-surface-container transition-all focus:outline-none cursor-pointer select-none">
-          <span class="material-symbols-outlined text-amber-400 text-[16px]">volume_up</span>
+        <button id="jarvis-header-btn" title="Play J.A.R.V.I.S. Executive Briefing" aria-label="Play JARVIS Briefing" class="px-2.5 py-1 rounded-full border border-outline/40 flex items-center gap-1.5 hover:bg-surface-container transition-all focus:outline-none cursor-pointer select-none">
+          <span class="material-symbols-outlined text-on-surface text-[16px]">volume_up</span>
           <span class="font-mono-code text-[11px] text-on-surface font-semibold hidden sm:inline">J.A.R.V.I.S.</span>
         </button>
 
@@ -1474,8 +1469,8 @@
             <!-- Hero Typography, Bio, and Lowercase Socials with ↗ (Slightly Bigger) -->
             <div class="flex flex-col justify-center text-center sm:text-left flex-1 min-w-0">
               <div class="flex items-center justify-center sm:justify-start gap-2 mb-2.5 font-mono-code">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.8)]"></span>
-                <span class="text-[10px] sm:text-[10.5px] uppercase px-2.5 py-0.5 border border-amber-400/30 text-amber-400 dark:text-amber-300 tracking-widest bg-amber-400/[0.04] rounded-sm">[SYS_ID: LDEV-SEC // 2026]</span>
+                <span class="w-1.5 h-1.5 bg-primary"></span>
+                <span class="text-[10px] sm:text-[10.5px] uppercase px-2.5 py-0.5 border border-primary/30 text-primary tracking-widest">[SYS_ID: LDEV-SEC // 2026]</span>
               </div>
               
               <h1 class="font-display-hero text-[38px] sm:text-[50px] lg:text-[56px] font-bold tracking-tight text-primary leading-[0.94] select-none">
@@ -1491,7 +1486,7 @@
               </p>
 
               <!-- Subtle Accent Line -->
-              <div class="w-full max-w-[500px] border-t border-amber-400/20 dark:border-amber-400/25 mt-5 sm:mt-6 mx-auto sm:mx-0"></div>
+              <div class="w-full max-w-[500px] border-t border-surface-container/50 dark:border-white/[0.08] mt-5 sm:mt-6 mx-auto sm:mx-0"></div>
             </div>
 
           </div>
@@ -1507,11 +1502,7 @@
           
           <!-- Top Section Label with Minimal Divider -->
           <div class="flex items-center justify-between pb-2 mb-3 sm:mb-3.5 border-b border-surface-container/50 dark:border-white/[0.07]">
-            <div class="flex items-center gap-2">
-              <span class="font-mono-code text-[10px] sm:text-[10.5px] font-bold text-primary tracking-widest uppercase">PERSONAL INFORMATION / 01</span>
-              <span class="text-amber-400 text-xs">•</span>
-              <span class="font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-wider uppercase">IDENTITY &amp; FOUNDATION</span>
-            </div>
+            <span class="font-mono-code text-[10px] sm:text-[10.5px] font-bold text-primary tracking-widest uppercase">PERSONAL INFORMATION / 01</span>
             <span class="font-mono-code text-[9px] sm:text-[9.5px] text-secondary tracking-widest uppercase">WHO I AM</span>
           </div>
 
@@ -1590,12 +1581,12 @@
                   <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
                     <span class="text-secondary uppercase">EMAIL</span>
                     <span class="text-secondary/40">:</span>
-                    <a href="mailto:dvlance112208@gmail.com" class="text-primary font-medium hover:text-amber-400 transition-colors truncate flex items-center gap-1 group"><span>dvlance112208@gmail.com</span><span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span></a>
+                    <a href="mailto:dvlance112208@gmail.com" class="text-primary font-medium hover:text-amber-400 transition-colors truncate">dvlance112208@gmail.com</a>
                   </div>
                   <div class="grid grid-cols-[120px_14px_1fr] items-baseline">
                     <span class="text-secondary uppercase">PHONE NUMBER</span>
                     <span class="text-secondary/40">:</span>
-                    <a href="tel:09950244311" class="text-primary font-medium hover:text-amber-400 transition-colors flex items-center gap-1 group"><span>09950244311</span><span class="text-[10px] text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span></a>
+                    <a href="tel:09950244311" class="text-primary font-medium hover:text-amber-400 transition-colors">09950244311</a>
                   </div>
                 </div>
               </div>
@@ -2028,11 +2019,9 @@
           <!-- Section Index Header -->
           <div class="flex items-baseline justify-between border-b border-surface-container pb-2 mb-3 reveal-on-scroll">
             <div>
-              <div class="flex items-center gap-2 mb-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.6)]"></span>
-                <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold">03 // Technical Arsenal</span>
-                <span class="text-amber-400 text-xs">•</span>
-                <span class="font-mono-code text-[10px] text-amber-400/90 uppercase tracking-widest">[25 VERIFIED CAPABILITIES]</span>
+              <div class="flex items-center gap-xs mb-xs">
+                <span class="w-1.5 h-1.5 bg-primary"></span>
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">03 // Technical Arsenal</span>
               </div>
               <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase tracking-tight font-medium">
                 Technical Arsenal
@@ -2093,8 +2082,8 @@
       <!-- Category: Network & Cybersecurity -->
       <div class="mb-7 last:mb-0">
         <div class="flex items-center gap-2 mb-3">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-          <h4 class="font-label-meta text-[11px] font-mono-code text-primary uppercase tracking-wider">
+          <span class="w-1.5 h-1.5 rounded-full bg-primary/70"></span>
+          <h4 class="font-label-meta text-[11px] font-mono-code text-outline uppercase tracking-wider">
             01 // NETWORK & CYBERSECURITY
           </h4>
         </div>
@@ -2199,8 +2188,8 @@
       <!-- Category: Backend & System Engineering -->
       <div class="mb-7 last:mb-0">
         <div class="flex items-center gap-2 mb-3">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-          <h4 class="font-label-meta text-[11px] font-mono-code text-primary uppercase tracking-wider">
+          <span class="w-1.5 h-1.5 rounded-full bg-primary/70"></span>
+          <h4 class="font-label-meta text-[11px] font-mono-code text-outline uppercase tracking-wider">
             02 // BACKEND & SYSTEM ENGINEERING
           </h4>
         </div>
@@ -2282,8 +2271,8 @@
       <!-- Category: Databases & Data Management -->
       <div class="mb-7 last:mb-0">
         <div class="flex items-center gap-2 mb-3">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-          <h4 class="font-label-meta text-[11px] font-mono-code text-primary uppercase tracking-wider">
+          <span class="w-1.5 h-1.5 rounded-full bg-primary/70"></span>
+          <h4 class="font-label-meta text-[11px] font-mono-code text-outline uppercase tracking-wider">
             03 // DATABASES & DATA MANAGEMENT
           </h4>
         </div>
@@ -2351,8 +2340,8 @@
       <!-- Category: Automation, AI & Web Scraping -->
       <div class="mb-7 last:mb-0">
         <div class="flex items-center gap-2 mb-3">
-          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-          <h4 class="font-label-meta text-[11px] font-mono-code text-primary uppercase tracking-wider">
+          <span class="w-1.5 h-1.5 rounded-full bg-primary/70"></span>
+          <h4 class="font-label-meta text-[11px] font-mono-code text-outline uppercase tracking-wider">
             04 // AUTOMATION, AI & WEB SCRAPING
           </h4>
         </div>
@@ -2666,7 +2655,7 @@
 
               <div>
                 <span class="font-label-meta text-[10px] font-mono-code text-outline uppercase tracking-wider block mb-1">
-                  <span class="text-amber-400 font-bold">&gt;</span> ACTIVE_APPLICATION
+                  &gt; ACTIVE_APPLICATION
                 </span>
                 <p id="detail-practical" class="font-body-md text-secondary text-[13px] leading-relaxed transition-opacity duration-200">
                   Automated shell scripting, system hardening, iptables firewall rule deployment, and isolated environment management for backend tooling.
@@ -2680,7 +2669,7 @@
             <!-- Project Connection -->
             <div id="detail-project-container" class="mt-5 pt-4 border-t border-surface-container">
               <span class="font-label-meta text-[10px] font-mono-code text-outline uppercase tracking-wider block mb-2">
-                <span class="text-amber-400 font-bold">&gt;</span> PROJECT_CONNECTION
+                &gt; PROJECT_CONNECTION
               </span>
               <div id="detail-project-card" class="p-3 rounded-lg bg-surface-container-low/70 border border-surface-container flex items-center justify-between">
                 <div>
@@ -2700,7 +2689,7 @@
             <!-- Concepts Chips -->
             <div class="mt-4 pt-3 border-t border-surface-container/60">
               <span class="font-label-meta text-[10px] font-mono-code text-outline uppercase tracking-wider block mb-2">
-                <span class="text-amber-400 font-bold">&gt;</span> CORE_CONCEPTS_AND_TOOLS
+                &gt; CORE_CONCEPTS_AND_TOOLS
               </span>
               <div id="detail-tools-chips" class="flex flex-wrap gap-1.5">
                 <!-- Injected via JS -->
@@ -2726,12 +2715,7 @@
             <!-- Section Header -->
             <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-3">
               <div>
-                <div class="flex items-center gap-2 mb-1">
-                  <span class="w-1.5 h-1.5 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.6)]"></span>
-                  <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold">04 // Selected Implementations</span>
-                  <span class="text-amber-400 text-xs">•</span>
-                  <span class="font-mono-code text-[10px] text-amber-400/90 uppercase tracking-widest">[SYS_DEPLOY.EXE // 2026]</span>
-                </div>
+                <span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block">Selected Implementations // sys_deploy.exe</span>
                 <h3 class="font-headline-sm text-headline-sm text-primary mt-1">Featured Systems &amp; Web Applications</h3>
               </div>
               <span class="font-label-meta text-label-meta text-outline font-mono-code">[2026 ARCHIVE]</span>
@@ -2757,7 +2741,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-2xl">
 
               <!-- Card 1: Collumbus Cloud Security Auditor -->
-              <div class="group relative flex flex-col justify-between rounded-3xl border border-surface-container bg-surface-container-lowest/80 hover:bg-surface-container-low/80 transition-all duration-300 hover:border-amber-400/40 dark:hover:border-amber-400/35 shadow-sm hover:shadow-xl overflow-hidden">
+              <div class="group relative flex flex-col justify-between rounded-3xl border border-surface-container bg-surface-container-lowest/80 hover:bg-surface-container-low/80 transition-all duration-300 hover:border-outline/40 shadow-sm hover:shadow-xl overflow-hidden">
                 <!-- Visual Preview Header -->
                 <div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-low border-b border-surface-container">
                   <img src="assets/images/projects/columbus-live.png" 
@@ -2785,7 +2769,7 @@
                   <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                       <div>
-                        <span class="font-label-meta text-[11px] text-amber-400 font-mono-code uppercase block">#PROJ-03 // CLOUD SECURITY &amp; IAM</span>
+                        <span class="font-label-meta text-[11px] text-outline font-mono-code uppercase block">#PROJ-03 // CLOUD SECURITY &amp; IAM</span>
                         <h4 class="font-headline-sm text-headline-sm text-primary group-hover:text-primary transition-colors flex items-center gap-2 mt-1">
                           <span>Collumbus</span>
                           <a href="http://columbus-audit.duckdns.org:8501/" target="_blank" rel="noopener noreferrer" class="text-secondary hover:text-primary transition-colors" title="Launch Collumbus Live Console">
@@ -2821,7 +2805,7 @@
               </div>
 
               <!-- Card 2: Driveline Daily Car Rentals -->
-              <div class="group relative flex flex-col justify-between rounded-3xl border border-surface-container bg-surface-container-lowest/80 hover:bg-surface-container-low/80 transition-all duration-300 hover:border-amber-400/40 dark:hover:border-amber-400/35 shadow-sm hover:shadow-xl overflow-hidden">
+              <div class="group relative flex flex-col justify-between rounded-3xl border border-surface-container bg-surface-container-lowest/80 hover:bg-surface-container-low/80 transition-all duration-300 hover:border-outline/40 shadow-sm hover:shadow-xl overflow-hidden">
                 <!-- Visual Preview Header -->
                 <div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-low border-b border-surface-container">
                   <img src="assets/images/projects/driveline-rentals.png" 
@@ -2849,7 +2833,7 @@
                   <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                       <div>
-                        <span class="font-label-meta text-[11px] text-amber-400 font-mono-code uppercase block">#PROJ-05 // FLEET &amp; BOOKING ENGINE</span>
+                        <span class="font-label-meta text-[11px] text-outline font-mono-code uppercase block">#PROJ-05 // FLEET &amp; BOOKING ENGINE</span>
                         <h4 class="font-headline-sm text-headline-sm text-primary group-hover:text-primary transition-colors flex items-center gap-2 mt-1">
                           <span>Driveline</span>
                           <a href="https://driveaway-daily-rentals.lovable.app" target="_blank" rel="noopener noreferrer" class="text-secondary hover:text-primary transition-colors" title="Launch Driveline">
@@ -2880,7 +2864,7 @@
               </div>
 
               <!-- Card 3: NOIR WATCH CO. -->
-              <div class="group relative flex flex-col justify-between rounded-3xl border border-surface-container bg-surface-container-lowest/80 hover:bg-surface-container-low/80 transition-all duration-300 hover:border-amber-400/40 dark:hover:border-amber-400/35 shadow-sm hover:shadow-xl overflow-hidden">
+              <div class="group relative flex flex-col justify-between rounded-3xl border border-surface-container bg-surface-container-lowest/80 hover:bg-surface-container-low/80 transition-all duration-300 hover:border-outline/40 shadow-sm hover:shadow-xl overflow-hidden">
                 <!-- Visual Preview Header -->
                 <div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-low border-b border-surface-container">
                   <img src="assets/images/projects/noir-watch.png" 
@@ -2908,7 +2892,7 @@
                   <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                       <div>
-                        <span class="font-label-meta text-[11px] text-amber-400 font-mono-code uppercase block">#PROJ-06 // MINIMALIST E-COMMERCE BOUTIQUE</span>
+                        <span class="font-label-meta text-[11px] text-outline font-mono-code uppercase block">#PROJ-06 // MINIMALIST E-COMMERCE BOUTIQUE</span>
                         <h4 class="font-headline-sm text-headline-sm text-primary group-hover:text-primary transition-colors flex items-center gap-2 mt-1">
                           <span>NOIR WATCH CO.</span>
                           <a href="https://noir-analog-boutique.lovable.app" target="_blank" rel="noopener noreferrer" class="text-secondary hover:text-primary transition-colors" title="Launch NOIR WATCH CO.">
@@ -2944,9 +2928,9 @@
             
     <div class="mt-3 pt-2.5 border-t border-surface-container/40 flex items-center justify-between text-xs">
       <span class="font-mono-code text-[11px] text-on-surface-variant">// VERIFIED_SYSTEMS: 03 PRODUCTION_HOSTS</span>
-      <button type="button" onclick="document.getElementById('audit-modal').classList.remove('hidden'); document.getElementById('audit-modal').classList.add('flex');" class="px-3.5 py-1.5 rounded-full border border-outline/30 hover:border-amber-400 text-xs font-mono-code text-on-surface hover:text-amber-400 transition-all flex items-center gap-1.5 cursor-pointer">
-        <span class="material-symbols-outlined text-[13px] text-amber-400">assignment</span>
-        <span>View Repository Audit Logs &amp; Experience <span class="text-amber-400">↗</span></span>
+      <button type="button" onclick="document.getElementById('audit-modal').classList.remove('hidden'); document.getElementById('audit-modal').classList.add('flex');" class="px-3.5 py-1.5 rounded-full border border-outline/30 hover:border-primary text-xs font-mono-code text-on-surface hover:text-primary transition-all flex items-center gap-1.5 cursor-pointer">
+        <span>📋</span>
+        <span>View Repository Audit Logs &amp; Experience →</span>
       </button>
     </div>
   </div>
@@ -2959,14 +2943,11 @@
         <div class="max-w-[1380px] mx-auto px-gutter-mobile lg:px-gutter-desktop">
           <!-- Section Index Header -->
           <div class="flex items-baseline justify-between border-b border-surface-container pb-md mb-2xl reveal-on-scroll">
-            <div class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.6)]"></span>
-              <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold">05 // handshake.init [PORT_443]</span>
-              <span class="text-amber-400 text-xs">•</span>
-              <span class="font-mono-code text-[10px] text-amber-400/90 uppercase tracking-widest">TCP SYN // INITIATE DIALOGUE</span>
-            </div>
-            <span class="font-label-meta text-label-meta text-secondary hidden sm:inline">
-              SECURE CONTACT PORTAL
+            <span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">
+              05 // handshake.init [PORT_443]
+            </span>
+            <span class="font-label-meta text-label-meta text-secondary">
+              TCP SYN // INITIATE DIALOGUE
             </span>
           </div>
 
@@ -2974,7 +2955,7 @@
             <!-- Left Display Callout -->
             <div class="lg:col-span-7 flex flex-col space-y-lg">
               <h2 class="font-display-hero text-[40px] sm:text-[60px] lg:text-display-hero uppercase tracking-tighter text-primary leading-[0.9]">
-                Let’s work<br/>together<span class="text-amber-400">.</span>
+                Let’s work<br/>together.
               </h2>
               <p class="font-body-lg text-body-lg text-secondary max-w-md pt-sm">
                 Whether inquiring about backend architectures, workflow automation consultation, or technical collaborations — my inbox is accessible.
@@ -2991,7 +2972,7 @@
                     <span id="copy-btn-text">Copy</span>
                   </button>
                 </div>
-                <a href="mailto:dvlance112208@gmail.com" class="magnetic-btn px-lg py-sm bg-primary hover:bg-amber-400 hover:text-neutral-950 text-on-primary font-label-caps text-label-caps uppercase tracking-widest hover:shadow-[0_0_20px_rgba(251,191,36,0.35)] rounded-2xl shadow-md text-center w-full sm:w-auto transition-all">
+                <a href="mailto:dvlance112208@gmail.com" class="magnetic-btn px-lg py-sm bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-widest hover:opacity-80 rounded-2xl shadow-md text-center w-full sm:w-auto">
                   Send Message →
                 </a>
               </div>
@@ -3008,21 +2989,21 @@
                   <div>
                     <div class="flex items-center gap-2">
                       <span class="font-label-caps text-label-caps uppercase text-secondary">Curriculum Vitae</span>
-                      <span class="px-2 py-0.5 rounded-full text-[10px] font-mono-code bg-amber-400/10 text-amber-400 border border-amber-400/25 font-bold">READY</span>
+                      <span class="px-2 py-0.5 rounded-full text-[10px] font-mono-code bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-bold">READY</span>
                     </div>
                     <h4 class="font-headline-sm text-headline-sm text-primary mt-xs">Comprehensive Resume</h4>
                     <p class="font-body-sm text-body-sm text-secondary mt-xs">
                       Formal academic standing, verified DSPC bronze medal, leadership citations, and live security deployments.
                     </p>
                   </div>
-                  <span class="material-symbols-outlined text-amber-400 text-[28px]">description</span>
+                  <span class="material-symbols-outlined text-primary text-[28px]">description</span>
                 </div>
                 <div class="pt-lg mt-lg border-t border-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <span class="font-label-meta text-label-meta text-outline">PDF • 2026 REVISION</span>
                   <div class="flex items-center gap-3">
-                    <a href="assets/docs/lance-de-vera-resume.pdf" download="Lance-De-Vera-Resume.pdf" target="_blank" rel="noopener noreferrer" class="font-label-caps text-label-caps uppercase text-primary hover:text-amber-400 underline decoration-1 underline-offset-4 transition-colors flex items-center gap-1 font-bold">
+                    <a href="assets/docs/lance-de-vera-resume.pdf" download="Lance-De-Vera-Resume.pdf" target="_blank" rel="noopener noreferrer" class="font-label-caps text-label-caps uppercase text-primary hover:text-secondary underline decoration-1 underline-offset-4 transition-colors flex items-center gap-1 font-bold">
                       <span>Download PDF</span>
-                      <span class="material-symbols-outlined text-[15px] text-amber-400">download</span>
+                      <span class="material-symbols-outlined text-[15px]">download</span>
                     </a>
                     <span class="text-outline">·</span>
                     <a href="mailto:dvlance112208@gmail.com?subject=Resume%20Request" class="font-label-meta text-label-meta text-secondary hover:text-primary transition-colors">
@@ -3037,21 +3018,21 @@
                 <div>
                   <span class="font-label-meta text-label-meta text-outline uppercase block mb-xs">Code &amp; Repos</span>
                   <a href="https://github.com/CLAEN1215" target="_blank" rel="noopener noreferrer" class="font-headline-sm text-headline-sm text-primary hover:text-secondary flex items-center gap-xs transition-colors">
-                    GitHub <span class="text-xs text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                    GitHub <span class="text-xs">↗</span>
                   </a>
                   <span class="font-label-meta text-label-meta text-secondary">@CLAEN1215</span>
                 </div>
                 <div>
                   <span class="font-label-meta text-label-meta text-outline uppercase block mb-xs">Professional</span>
                   <a href="https://www.linkedin.com/in/lance-de-vera" target="_blank" rel="noopener noreferrer" class="font-headline-sm text-headline-sm text-primary hover:text-secondary flex items-center gap-xs transition-colors" title="Visit LinkedIn Profile">
-                    LinkedIn <span class="text-xs text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                    LinkedIn <span class="text-xs">↗</span>
                   </a>
                   <span class="font-label-meta text-label-meta text-secondary">Lance De Vera</span>
                 </div>
                 <div>
                   <span class="font-label-meta text-label-meta text-outline uppercase block mb-xs">Social Presence</span>
                   <a href="https://www.facebook.com/lance.de.vera.658636/" target="_blank" rel="noopener noreferrer" class="font-headline-sm text-headline-sm text-primary hover:text-secondary flex items-center gap-xs transition-colors" title="Visit Facebook Profile">
-                    Facebook <span class="text-xs text-amber-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+                    Facebook <span class="text-xs">↗</span>
                   </a>
                   <span class="font-label-meta text-label-meta text-secondary">Lance De Vera</span>
                 </div>
@@ -3625,9 +3606,9 @@
   <!-- INTERACTIVE CYBER CLI TERMINAL (Press ~ or click floating pill)  -->
   <!-- ═════════════════════════════════════════════════════════════════ -->
   <!-- Floating Launch Button -->
-  <button id="cli-trigger-btn" aria-label="Open Security Console" class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-40 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-full border border-outline/40 hover:border-amber-400/50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-lg hover:shadow-[0_0_20px_rgba(251,191,36,0.25)] hover:scale-105 transition-all flex items-center gap-2 font-mono-code text-[12px] text-primary cursor-pointer select-none">
-    <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0 shadow-[0_0_8px_rgba(251,191,36,0.8)]"></span>
-    <span class="font-bold cli-btn-label"><span class="text-amber-400">>_</span> TERMINAL</span>
+  <button id="cli-trigger-btn" aria-label="Open Security Console" class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-40 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-full border border-outline/40 bg-surface-container-lowest/90 backdrop-blur-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all flex items-center gap-2 font-mono-code text-[12px] text-primary cursor-pointer select-none">
+    <span class="w-2 h-2 rounded-full bg-primary animate-pulse shrink-0"></span>
+    <span class="font-bold cli-btn-label">>_ TERMINAL</span>
     <span class="text-secondary text-[10px] hidden sm:inline border border-outline/30 px-1.5 py-0.5 rounded">~</span>
   </button>
 
